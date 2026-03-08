@@ -1,21 +1,21 @@
 ## MoSh | Unofficial Mothership RPG
 
-An unofficial implementation of Tuesday Knight's Mothership role playing system. Mothership is the property of Tuesday Knight Games, and can be purchased at https://mothershiprpg.com/
+Неофициальная реализация системы Mothership от Tuesday Knight для Foundry VTT на русском языке. Mothership принадлежит Tuesday Knight Games, её можно приобрести по адресу https://mothershiprpg.com/.
 
-#### Features
-- Full 1e AND 0e system support with conditions, rolltables, and macros for each
-- Character sheets styled to resemble the official printout sheets
-- Comprehensive automation for all checks, saves, attacks, wounds, and conditions
-- Intuitive hotbar macros for key tasks that guide you through step-by-step
-- Customizable ship and creature sheets with selectable stats
-- Macro support for weapons, items, stats, and skills
-- Includes optional house rules, like Calm and Android panic tables
-- Custom Dice So Nice! themes for regular rolls, damage, and panic checks 
+#### Особенности
+- Полная поддержка 0е и 1е версий системы с состояниями, таблицами генерации и макросами
+- Листы персонажей стилизованные похоже на официальные листы для печати
+- Полноценная автоматизация для всех проверок, испытаний, атак, ран и состояний
+- Интуитивно понятные макросы для ключевых задач, что направляют шаг за шагом
+- Редактируемые листы для кораблей и созданий с возможностью выбирать характеристики
+- Поддержка макросов для оружия, предметов, характеристик и навыков
+- Включает опциональные домашние правила, такие как Самообладание и таблицы паники для Андроидов
+- Dice So Nice! темы для обычных бросков, урона и проверок паники
   
-#### Screenshots
+#### Скриншоты
 ![Alt text](https://github.com/Futil/foundry-mothership/assets/982251/9d929554-8fcf-4fa1-b198-44c99b60434c "Screenshot") 
 
-#### Licensing & Community Guidelines
-- This system is not affiliated with Tuesday Knight Games and is released for non-commercial purposes.
-- Mothership is copyright Tuesday Knight Games. All relevant trademarks and IP are the property of their respective owners.
-- This Foundry VTT system for Mothership is an unofficial community project, released under the MIT License. Third-party modules (free or paid) are welcome, but are not supported, and may break with future updates to the system.
+#### О лицензировании и разработке
+- Эта реализация системы не имеет отношения к Tuesday Knight Games и создается на некоммерческих началах.
+- Права на систему Mothership принадлежат Tuesday Knight Games. Все связанные товарные знаки и интеллектуальная собственность принадлежат их владельцам.
+- Эта реализация системы для Foundry VTT - неофициальный проект комьюнити игры, опубликованный под лицензией MIT License. Прочие модификации и модули (платные или бесплатные) приветствуются, но не поддерживаются, и могут нарушить работу при обновлениях системы.
