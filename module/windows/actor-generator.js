@@ -16,7 +16,7 @@ export class DLActorGenerator extends FormApplication {
     * @type {String}
     */
    get title() {
-      return `${this.object.name}: ${game.i18n.localize("Mosh.CharacterGenerator.name")}`;
+      return `${this.object.name}: ${game.i18n.localize("Moshru.CharacterGenerator.name")}`;
    }
    /* -------------------------------------------- */
 
@@ -55,48 +55,48 @@ export class DLActorGenerator extends FormApplication {
 
    /* todo: remove pre-defined values and set the values as configuration /maybe part of class-item¿? */
    async rollStrength(html) {
-      this.rollDices("2d10+25", html, `system.stats.strength.value`, game.i18n.format("Mosh.RollingForGeneric",{
-         name:game.i18n.localize("Mosh.Strength")
+      this.rollDices("2d10+25", html, `system.stats.strength.value`, game.i18n.format("Moshru.RollingForGeneric",{
+         name:game.i18n.localize("Moshru.Strength")
       }))
    }
    async rollSpeed(html) {
-      this.rollDices("2d10+25", html, `system.stats.speed.value`,  game.i18n.format("Mosh.RollingForGeneric",{
-         name:game.i18n.localize("Mosh.Speed")
+      this.rollDices("2d10+25", html, `system.stats.speed.value`,  game.i18n.format("Moshru.RollingForGeneric",{
+         name:game.i18n.localize("Moshru.Speed")
       }))
    }
    async rollIntellect(html) {
-      this.rollDices("2d10+25", html, `system.stats.intellect.value`, game.i18n.format("Mosh.RollingForGeneric",{
-         name:game.i18n.localize("Mosh.Intellect")
+      this.rollDices("2d10+25", html, `system.stats.intellect.value`, game.i18n.format("Moshru.RollingForGeneric",{
+         name:game.i18n.localize("Moshru.Intellect")
       }))
    }
    async rollCombat(html) {
-      this.rollDices("2d10+25", html, `system.stats.combat.value`,  game.i18n.format("Mosh.RollingForGeneric",{
-         name:game.i18n.localize("Mosh.Combat")
+      this.rollDices("2d10+25", html, `system.stats.combat.value`,  game.i18n.format("Moshru.RollingForGeneric",{
+         name:game.i18n.localize("Moshru.Combat")
       }))
    }
    async rollHealth(html) {
-      this.rollDices("1d10+10", html, `system.health.max`, game.i18n.format("Mosh.RollingForGeneric",{
-         name:game.i18n.localize("Mosh.Health")
+      this.rollDices("1d10+10", html, `system.health.max`, game.i18n.format("Moshru.RollingForGeneric",{
+         name:game.i18n.localize("Moshru.Health")
       }))
    }
    async rollSanity(html) {
-      this.rollDices("2d10+10", html, `system.stats.sanity.value`,  game.i18n.format("Mosh.RollingForGeneric",{
-         name:game.i18n.localize("Mosh.Sanity")
+      this.rollDices("2d10+10", html, `system.stats.sanity.value`,  game.i18n.format("Moshru.RollingForGeneric",{
+         name:game.i18n.localize("Moshru.Sanity")
       }))
    }
    async rollFear(html) {
-      this.rollDices("2d10+10", html, `system.stats.fear.value`,  game.i18n.format("Mosh.RollingForGeneric",{
-         name:game.i18n.localize("Mosh.Fear")
+      this.rollDices("2d10+10", html, `system.stats.fear.value`,  game.i18n.format("Moshru.RollingForGeneric",{
+         name:game.i18n.localize("Moshru.Fear")
       }))
    }
    async rollBody(html) {
-      this.rollDices("2d10+10", html, `system.stats.body.value`,  game.i18n.format("Mosh.RollingForGeneric",{
-         name:game.i18n.localize("Mosh.Body")
+      this.rollDices("2d10+10", html, `system.stats.body.value`,  game.i18n.format("Moshru.RollingForGeneric",{
+         name:game.i18n.localize("Moshru.Body")
       }))
    }
    async rollCredits(html) {
-      this.rollDices("2d10*10", html, `system.credits.value`,  game.i18n.format("Mosh.RollingForGeneric",{
-         name:game.i18n.localize("Mosh.Credits")
+      this.rollDices("2d10*10", html, `system.credits.value`,  game.i18n.format("Moshru.RollingForGeneric",{
+         name:game.i18n.localize("Moshru.Credits")
       }))
    }
 
@@ -146,7 +146,7 @@ export class DLActorGenerator extends FormApplication {
 
    async rollPatch(html) {
       if (!this.patchTable) {
-         ui.notifications.error(game.i18n.localize("Mosh.CharacterGenerator.Error.NoClass"));
+         ui.notifications.error(game.i18n.localize("Moshru.CharacterGenerator.Error.NoClass"));
          return;
       }
       await this.rollTable(html, "system.class.patch", this.patchTable);
@@ -154,7 +154,7 @@ export class DLActorGenerator extends FormApplication {
    }
    async rollTrinket(html) {
       if (!this.trinketTable) {
-         ui.notifications.error(game.i18n.localize("Mosh.CharacterGenerator.Error.NoClass"));
+         ui.notifications.error(game.i18n.localize("Moshru.CharacterGenerator.Error.NoClass"));
          return;
       }
       await this.rollTable(html, "system.class.trinket", this.trinketTable);
@@ -162,7 +162,7 @@ export class DLActorGenerator extends FormApplication {
    }
    async rollLoadout(html) {
       if (!this.loadoutTable) {
-         ui.notifications.error(game.i18n.localize("Mosh.CharacterGenerator.Error.NoClass"));
+         ui.notifications.error(game.i18n.localize("Moshru.CharacterGenerator.Error.NoClass"));
          return;
       }
       await this.rollTable(html, "system.class.loadout", this.loadoutTable, "ul");
@@ -210,9 +210,9 @@ export class DLActorGenerator extends FormApplication {
             });
          }
          let d = new foundry.applications.api.DialogV2({
-		      window: {title: game.i18n.localize("Mosh.CharacterGenerator.StatOptionPopupTitle")},
+		      window: {title: game.i18n.localize("Moshru.CharacterGenerator.StatOptionPopupTitle")},
             classes: ["macro-popup-dialog"],
-            content: `<div class="macro_desc"><h4>${game.i18n.localize("Mosh.CharacterGenerator.StatOptionPopupText")}</h4></div>`,
+            content: `<div class="macro_desc"><h4>${game.i18n.localize("Moshru.CharacterGenerator.StatOptionPopupText")}</h4></div>`,
             buttons: buttons_options,
             default: "1",
             //render: html => console.log("Register interactivity in the rendered dialog"),
@@ -306,7 +306,7 @@ export class DLActorGenerator extends FormApplication {
 
 
       let skillPopupData = {
-         title: game.i18n.localize("Mosh.CharacterGenerator.SkillOption.PopupTitle"),
+         title: game.i18n.localize("Moshru.CharacterGenerator.SkillOption.PopupTitle"),
          existingSkills: skillsUuid,
          skills: {
             trained: all_skills.filter(i => i.system.rank == "Trained"),
@@ -315,7 +315,7 @@ export class DLActorGenerator extends FormApplication {
          }
       };
       if (exclusive) {
-         skillPopupData.description = game.i18n.localize("Mosh.CharacterGenerator.SkillOption.Popup" + exclusive + "Description");
+         skillPopupData.description = game.i18n.localize("Moshru.CharacterGenerator.SkillOption.Popup" + exclusive + "Description");
          switch (exclusive) {
             case "Master":
                skillPopupData.skills = all_skills.filter(i => i.system.rank == "Master" && i.system.prerequisite_ids.filter(item => skillsUuid.includes(item)).length > 0);
@@ -333,7 +333,7 @@ export class DLActorGenerator extends FormApplication {
 
       return new Promise((resolve) => {
          let d = new foundry.applications.api.DialogV2({
-		      window: {title: game.i18n.localize("Mosh.CharacterGenerator.SkillOption.PopupTitle")},
+		      window: {title: game.i18n.localize("Moshru.CharacterGenerator.SkillOption.PopupTitle")},
             classes: ["macro-popup-dialog"],
             content: popUpContent,
             buttons: [
@@ -383,14 +383,14 @@ export class DLActorGenerator extends FormApplication {
             buttonsData.push({
                icon: 'fas fa-check',
 			      action: list_option_skills_or[i].name,
-               label: list_option_skills_or[i].name,//game.i18n.localize("Mosh.CharacterGenerator.SkillOption.ChoiceWord") + ` ${i}`,
+               label: list_option_skills_or[i].name,//game.i18n.localize("Moshru.CharacterGenerator.SkillOption.ChoiceWord") + ` ${i}`,
                callback: () => {
                   resolve(list_option_skills_or[i]);
                }
             });
          }
          let d = new foundry.applications.api.DialogV2({
-		      window: {title: game.i18n.localize("Mosh.CharacterGenerator.SkillOption.PopupTitle")},
+		      window: {title: game.i18n.localize("Moshru.CharacterGenerator.SkillOption.PopupTitle")},
             classes: ["macro-popup-dialog"],
             content: popUpContent,
             window:{width: 500},
@@ -407,7 +407,7 @@ export class DLActorGenerator extends FormApplication {
    async applyClassSkills(html) {
       let class_uuid = html.find(`input[id="system.class.uuid"]`).prop("value");
       if (class_uuid == "") {
-         ui.notifications.error(game.i18n.localize("Mosh.CharacterGenerator.SkillOption.Classerror"));
+         ui.notifications.error(game.i18n.localize("Moshru.CharacterGenerator.SkillOption.Classerror"));
          return;
       }
       let classObject = await fromUuid(class_uuid);
@@ -471,9 +471,9 @@ export class DLActorGenerator extends FormApplication {
                   });
                }
                let d = new foundry.applications.api.DialogV2({
-                  window: {title: game.i18n.localize("Mosh.CharacterGenerator.StatOptionPopupTitle")},
+                  window: {title: game.i18n.localize("Moshru.CharacterGenerator.StatOptionPopupTitle")},
                   classes: ["macro-popup-dialog"],
-                  content: `<div class="macro_desc"><h4>${game.i18n.localize("Mosh.CharacterGenerator.StatOptionPopupText")} (${option_stats_and_saves.modification})</h4></div>`,
+                  content: `<div class="macro_desc"><h4>${game.i18n.localize("Moshru.CharacterGenerator.StatOptionPopupText")} (${option_stats_and_saves.modification})</h4></div>`,
                   buttons: buttons_options,
                   default: "1",
                   //render: html => console.log("Register interactivity in the rendered dialog"),

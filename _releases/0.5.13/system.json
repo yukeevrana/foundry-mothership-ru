@@ -1,6 +1,6 @@
 {
   "id": "moshru",
-  "title": "MoSh - Unofficial Mothership",
+  "title": "MoShRu - Unofficial Mothership",
   "description": "The unofficial Mothership system for FoundryVTT.",
   "version": "0.5.13",
   "esmodules": [

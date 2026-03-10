@@ -641,7 +641,7 @@ export class MothershipActorSheet extends foundry.appv1.sheets.ActorSheet {
     const canConfigure = game.user.isGM || this.actor.isOwner;
     if (this.options.editable && canConfigure) {
         buttons = [{
-            label: game.i18n.localize("Mosh.CharacterGenerator.name"),
+            label: game.i18n.localize("Moshru.CharacterGenerator.name"),
             class: 'configure-actor',
             icon: 'fas fa-cogs',
             onclick: (ev) => this._onConfigureCreature(ev),

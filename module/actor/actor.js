@@ -119,7 +119,7 @@ export class MothershipActor extends Actor {
       systemclass = "android";
       //todo: get the class item for the character to check the "is robotic" flag
     }
-    let locString = `Mosh.${type}.${context}.${action}.${systemclass}`;
+    let locString = `Moshru.${type}.${context}.${action}.${systemclass}`;
     //check to see if this address exists in the library, return the action parameter if not
     if(game.i18n.has(locString, true)){ // You can pass false as the second argument to ignore english-language fallback.
         //log what was done
@@ -732,7 +732,7 @@ export class MothershipActor extends Actor {
         rollDie = '1d100';
       }
         //run the choose attribute function
-      let chosenRollType = await this.chooseAdvantage( game.i18n.localize("Mosh.PanicCheck"), rollDie);
+      let chosenRollType = await this.chooseAdvantage( game.i18n.localize("Moshru.PanicCheck"), rollDie);
         //set variables
         rollString = chosenRollType[0];
       }
@@ -834,9 +834,9 @@ export class MothershipActor extends Actor {
       //panic check #19 customiziation
       if (tableName === 'Panic Check' && tableResultNumber === 19) {
         if (this.system.class.value.toLowerCase() === 'android') {
-        tableResultEdited = tableResult[0].description.replace(game.i18n.localize("Mosh.HEARTATTACKSHORTCIRCUITANDROIDS"), game.i18n.localize("Mosh.SHORTCIRCUIT"));
+        tableResultEdited = tableResult[0].description.replace(game.i18n.localize("Moshru.HEARTATTACKSHORTCIRCUITANDROIDS"), game.i18n.localize("Moshru.SHORTCIRCUIT"));
         } else {
-        tableResultEdited = tableResult[0].description.replace(game.i18n.localize("Mosh.HEARTATTACKSHORTCIRCUITANDROIDS"), game.i18n.localize("Mosh.HEARTATTACK"));
+        tableResultEdited = tableResult[0].description.replace(game.i18n.localize("Moshru.HEARTATTACKSHORTCIRCUITANDROIDS"), game.i18n.localize("Moshru.HEARTATTACK"));
         }
       }
     //assign message description text
@@ -846,11 +846,11 @@ export class MothershipActor extends Actor {
     flavorText = this.getFlavorText('table', tableName.replaceAll('& ', '').replaceAll(' ', '_').toLowerCase(), 'success');
       //append 0e crit success effect
       if (!firstEdition && !useCalm && parsedRollResult.success && parsedRollResult.critical) {
-      flavorText = flavorText + game.i18n.localize("Mosh.Relieve1Stressqbq694JMbXeZrHj");
+      flavorText = flavorText + game.i18n.localize("Moshru.Relieve1Stressqbq694JMbXeZrHj");
       }
       //append Calm effects for Critical Panic Success
       if (useCalm && parsedRollResult.success && parsedRollResult.critical) {
-      flavorText = flavorText + game.i18n.localize("Mosh.Gain1d10Calmk2TtLFOG9mGaWVx31d10Calm");
+      flavorText = flavorText + game.i18n.localize("Moshru.Gain1d10Calmk2TtLFOG9mGaWVx31d10Calm");
       }
       //append Calm effects for Critical Panic Failure
       if (useCalm && !parsedRollResult.success && parsedRollResult.critical) {
@@ -949,13 +949,13 @@ export class MothershipActor extends Actor {
       let dialogDesc = await foundry.applications.handlebars.renderTemplate('systems/moshru/templates/dialogs/skill-check-stat-selection-dialog.html');
         //create button header if needed
         if (!rollString) {
-        buttonDesc = `<div class="macro_prompt">` + game.i18n.localize("Mosh.SelectYourRollType") + `</div>`;
+        buttonDesc = `<div class="macro_prompt">` + game.i18n.localize("Moshru.SelectYourRollType") + `</div>`;
         } else {
           buttonDesc = ``;
         }
       //create final dialog data
       const dialogData = {
-        window: {title: game.i18n.localize("Mosh.ChooseAStat")},
+        window: {title: game.i18n.localize("Moshru.ChooseAStat")},
         classes: ["macro-popup-dialog"],
         position: {width: 600},
         content: dialogDesc + buttonDesc,
@@ -966,7 +966,7 @@ export class MothershipActor extends Actor {
         //we need to generate a roll string
         dialogData.buttons = [
           {
-            label: game.i18n.localize("Mosh.Advantage"),
+            label: game.i18n.localize("Moshru.Advantage"),
             action: `action_advantage`,
             callback: (event, button, dialog) => {
               rollString = `1d100 [+]`;
@@ -978,7 +978,7 @@ export class MothershipActor extends Actor {
             icon: `fas fa-angle-double-up`
           },
           {
-            label: game.i18n.localize("Mosh.Normal"),
+            label: game.i18n.localize("Moshru.Normal"),
 			      action: `action_normal`,
             callback: (event, button, dialog) => {
               rollString = `1d100`;
@@ -990,7 +990,7 @@ export class MothershipActor extends Actor {
             icon: `fas fa-minus`
           },
           {
-            label: game.i18n.localize("Mosh.Disadvantage"),
+            label: game.i18n.localize("Moshru.Disadvantage"),
 			      action: `action_disadvantage`,
             callback: (event, button, dialog) => {
               rollString = `1d100 [-]`;
@@ -1006,7 +1006,7 @@ export class MothershipActor extends Actor {
       } else {
         dialogData.buttons = [
           {
-            label: game.i18n.localize("Mosh.Next"),
+            label: game.i18n.localize("Moshru.Next"),
 			      action: `action_next`,
             callback: (event, button, dialog) => {
               aimFor = `low`;
@@ -1097,7 +1097,7 @@ export class MothershipActor extends Actor {
           }
         //create button header if needed
         if (!rollString) {
-          buttonDesc = `<div class="macro_prompt">` + game.i18n.localize("Mosh.SelectYourRollType") + `:</div>`;
+          buttonDesc = `<div class="macro_prompt">` + game.i18n.localize("Moshru.SelectYourRollType") + `:</div>`;
         } else {
           buttonDesc = ``;
         }
@@ -1114,7 +1114,7 @@ export class MothershipActor extends Actor {
         //we need to generate a roll string
         dialogData.buttons = [
           {
-            label: game.i18n.localize("Mosh.Advantage"),
+            label: game.i18n.localize("Moshru.Advantage"),
             action: `action_advantage`,
             callback: (event, button, dialog) => {
               rollString = `1d100 [+]`;
@@ -1126,7 +1126,7 @@ export class MothershipActor extends Actor {
             icon: `fas fa-angle-double-up`
           },
           {
-            label: game.i18n.localize("Mosh.Normal"),
+            label: game.i18n.localize("Moshru.Normal"),
             action: `action_normal`,
             callback: (event, button, dialog) => {
               rollString = `1d100`;
@@ -1138,7 +1138,7 @@ export class MothershipActor extends Actor {
             icon: `fas fa-minus`
           },
           {
-            label: game.i18n.localize("Mosh.Disadvantage"),
+            label: game.i18n.localize("Moshru.Disadvantage"),
             action: `action_disadvantage`,
             callback: (event, button, dialog) => {
               rollString = `1d100 [-]`;
@@ -1154,7 +1154,7 @@ export class MothershipActor extends Actor {
       } else {
         dialogData.buttons = [
           {
-            label: game.i18n.localize("Mosh.Next"),
+            label: game.i18n.localize("Moshru.Next"),
 			      action: `action_next`,
             callback: (event, button, dialog) => {
               skill = button.form.querySelector("input[name='skill']:checked")?.getAttribute("id");
@@ -1185,10 +1185,10 @@ export class MothershipActor extends Actor {
         window: {title: dlgTitle},
         classes: ["macro-popup-dialog"],
         position: {width: 600},
-        content: `<div class="macro_prompt">` + game.i18n.localize("Mosh.SelectYourRollType") + `:</div>`,
+        content: `<div class="macro_prompt">` + game.i18n.localize("Moshru.SelectYourRollType") + `:</div>`,
         buttons: [
           {
-            label: game.i18n.localize("Mosh.Advantage"),
+            label: game.i18n.localize("Moshru.Advantage"),
 			      action: `action_advantage`,
             callback: (event, button, dialog) => {
               rollString = dieAdv;
@@ -1198,7 +1198,7 @@ export class MothershipActor extends Actor {
             icon: `fas fa-angle-double-up`
           },
           {
-            label: game.i18n.localize("Mosh.Normal"),
+            label: game.i18n.localize("Moshru.Normal"),
 			      action: `action_normal`,
             callback: (event, button, dialog) => {
               rollString = die;
@@ -1208,7 +1208,7 @@ export class MothershipActor extends Actor {
             icon: `fas fa-minus`
           },
           {
-            label: game.i18n.localize("Mosh.Disadvantage"),
+            label: game.i18n.localize("Moshru.Disadvantage"),
 			      action: `action_disadvantage`,
             callback: (event, button, dialog) => { 
               rollString = dieDis;
@@ -1637,7 +1637,7 @@ export class MothershipActor extends Actor {
         //rest save
         if (specialRoll === 'restSave') {
           //override message header
-          msgHeader = game.i18n.localize("Mosh.RestSave");
+          msgHeader = game.i18n.localize("Moshru.RestSave");
           //override  header image
           msgImgPath = `systems/moshru/images/icons/ui/macros/rest_save.png`;
           //prepare attribute label
@@ -1745,11 +1745,11 @@ export class MothershipActor extends Actor {
         //bankruptcy save
         if (specialRoll === 'bankruptcySave') {
           //message header
-          msgHeader = game.i18n.localize("Mosh.BankrupcySave");
+          msgHeader = game.i18n.localize("Moshru.BankrupcySave");
           //set header image
           msgImgPath = 'systems/moshru/images/icons/ui/rolltables/bankruptcy_save.png';
           //prepare attribute label
-          attributeLabel = game.i18n.localize("Mosh.Bankrupcy");
+          attributeLabel = game.i18n.localize("Moshru.Bankrupcy");
           //get the bankruptcy table
           let tableId = game.settings.get('moshru','table1eBankruptcy');
           //get Table Data
@@ -1775,7 +1775,7 @@ export class MothershipActor extends Actor {
         //morale check
         if (specialRoll === 'moraleCheck') {
           //message header
-          msgHeader = game.i18n.localize("Mosh.MoraleCheck") 
+          msgHeader = game.i18n.localize("Moshru.MoraleCheck") 
           //set header image
           msgImgPath = 'systems/moshru/images/icons/ui/macros/morale_check.png';
           //prepare attribute label
@@ -2049,10 +2049,10 @@ export class MothershipActor extends Actor {
           msgOutcome = this.getFlavorText('attribute', 'hits', 'hitCeiling');
             } else if (this.system.hits.value + 1 === this.system.hits.max) {
               //you are wounded!
-          msgOutcome = game.i18n.localize("Mosh.HealthZeroMessage") + `<br><br>` + this.getFlavorText('attribute', 'hits', 'increase');
+          msgOutcome = game.i18n.localize("Moshru.HealthZeroMessage") + `<br><br>` + this.getFlavorText('attribute', 'hits', 'increase');
             } else {
               //you are wounded!
-          msgOutcome = game.i18n.localize("Mosh.HealthZeroMessage") + ` <strong>${modifyNew}</strong>.<br><br>` + this.getFlavorText('attribute', 'hits', 'increase');
+          msgOutcome = game.i18n.localize("Moshru.HealthZeroMessage") + ` <strong>${modifyNew}</strong>.<br><br>` + this.getFlavorText('attribute', 'hits', 'increase');
             }
           //set message outcome for past ceiling or floor
           } else if (msgAction === 'pastFloor' || msgAction === 'pastCeiling') {
@@ -2188,10 +2188,10 @@ export class MothershipActor extends Actor {
           msgOutcome = this.getFlavorText('attribute', 'hits', 'hitCeiling');
                   } else if (this.system.hits.value + 1 === this.system.hits.max) {
                     //you are wounded!
-          msgOutcome = game.i18n.localize("Mosh.HealthZeroMessage") + `<br><br>` + this.getFlavorText('attribute', 'hits', 'increase');
+          msgOutcome = game.i18n.localize("Moshru.HealthZeroMessage") + `<br><br>` + this.getFlavorText('attribute', 'hits', 'increase');
                   } else {
                     //you are wounded!
-          msgOutcome = game.i18n.localize("Mosh.HealthZeroMessage2") +` <strong>${modifyNew}</strong>.<br><br>` + this.getFlavorText('attribute', 'hits', 'increase');
+          msgOutcome = game.i18n.localize("Moshru.HealthZeroMessage2") +` <strong>${modifyNew}</strong>.<br><br>` + this.getFlavorText('attribute', 'hits', 'increase');
                   }
                 //set message outcome for past ceiling or floor
                 } else if (msgAction === 'pastFloor' || msgAction === 'pastCeiling') {
@@ -2297,7 +2297,7 @@ export class MothershipActor extends Actor {
         //add item to the players inventory
         await this.createEmbeddedDocuments('Item', [itemData]);
         //create message text
-        flavorText = game.i18n.localize("Mosh.YouAddAnotherOfThisToYourInventory");
+        flavorText = game.i18n.localize("Moshru.YouAddAnotherOfThisToYourInventory");
       }
     } else {
       //if this is an item, add it
@@ -2325,12 +2325,12 @@ export class MothershipActor extends Actor {
         //add item to the players inventory
         await this.createEmbeddedDocuments('Item', [itemData]);
         //create message text
-        flavorText = game.i18n.localize("Mosh.YouAddThisToYourInventory");
+        flavorText = game.i18n.localize("Moshru.YouAddThisToYourInventory");
       } else if (itemData.type === 'skill' ) {
         //add item to the players inventory
         await this.createEmbeddedDocuments('Item', [itemData]);
         //create message text
-        flavorText = game.i18n.localize("Mosh.YouLearnThisSkill");
+        flavorText = game.i18n.localize("Moshru.YouLearnThisSkill");
       }
     }
     //generate chat message
@@ -2374,13 +2374,13 @@ export class MothershipActor extends Actor {
       //create final dialog data
       const dialogData = {
         window: {
-          title: game.i18n.localize("Mosh.WeaponIssue")
+          title: game.i18n.localize("Moshru.WeaponIssue")
         },
         classes: ["macro-popup-dialog"],
-        content: `<div class="macro_prompt">` + game.i18n.localize("Mosh.OutOfAmmoNeedReload") + `</div>`,
+        content: `<div class="macro_prompt">` + game.i18n.localize("Moshru.OutOfAmmoNeedReload") + `</div>`,
         buttons: [
           {
-            label: game.i18n.localize("Mosh.Reload"),
+            label: game.i18n.localize("Moshru.Reload"),
 			      action: `action_reload`,
             callback: () => this.reloadWeapon(itemId),
             icon: `fas fa-check`
@@ -2407,13 +2407,13 @@ export class MothershipActor extends Actor {
       //create final dialog data
       const dialogData = {
         window: {
-          title: game.i18n.localize("Mosh.WeaponIssue")
+          title: game.i18n.localize("Moshru.WeaponIssue")
         },
         classes: ["macro-popup-dialog"],
-        content: `<div class="macro_prompt">` + game.i18n.localize("Mosh.OutOfAmmo") + `</div>`,
+        content: `<div class="macro_prompt">` + game.i18n.localize("Moshru.OutOfAmmo") + `</div>`,
         buttons: [
           {
-            label: game.i18n.localize("Mosh.OK"),
+            label: game.i18n.localize("Moshru.OK"),
 			      action: `action_okay`,
             callback: () => {},
             icon: 'fas fa-check'
@@ -2473,7 +2473,7 @@ export class MothershipActor extends Actor {
 
         
         //set message body text
-        msgBody = game.i18n.localize("Mosh.WeaponReloaded");
+        msgBody = game.i18n.localize("Moshru.WeaponReloaded");
       }
     }
     //generate chat message
@@ -2515,7 +2515,7 @@ export class MothershipActor extends Actor {
     //get flavor text
     let msgFlavor = this.getFlavorText('item', 'condition', 'bleed');
     let msgOutcome = modification[1];
-    let healthLostText = game.i18n.localize("Mosh.attribute.health.decreaseHeader.human")
+    let healthLostText = game.i18n.localize("Moshru.attribute.health.decreaseHeader.human")
     //create chat message text
     let messageContent = `
     <div class="moshru">
@@ -2565,9 +2565,9 @@ export class MothershipActor extends Actor {
     this.modifyActor('system.stats.body.value', -1, null, false);
     //get flavor text
     let msgFlavor = this.getFlavorText('item', 'condition', 'radiation');
-    let msgOutcome = game.i18n.localize('Mosh.AllStatsAndSavesDecreasedBy');
+    let msgOutcome = game.i18n.localize('Moshru.AllStatsAndSavesDecreasedBy');
     msgOutcome += ` <strong>1</strong>.`;
-    let radiationDamage = game.i18n.localize('Mosh.RadiationDamage');
+    let radiationDamage = game.i18n.localize('Moshru.RadiationDamage');
 
     //create chat message text
     let messageContent = `
@@ -2625,9 +2625,9 @@ export class MothershipActor extends Actor {
     this.modifyActor('system.stats.body.value', parsedRollResult.total, null, false);
     //get flavor text
     let msgFlavor = this.getFlavorText('item', 'condition', 'cryo');
-    let msgOutcome = game.i18n.localize('Mosh.AllStatsAndSavesDecreasedBy');
+    let msgOutcome = game.i18n.localize('Moshru.AllStatsAndSavesDecreasedBy');
     msgOutcome += ` <strong>` + Math.abs(parsedRollResult.total).toString() + `</strong>.`;
-    let cryoDamage = game.i18n.localize("Mosh.CryofreezeDamage")
+    let cryoDamage = game.i18n.localize("Moshru.CryofreezeDamage")
     //create chat message text
     let messageContent = `
     <div class="moshru">
@@ -2703,13 +2703,13 @@ export class MothershipActor extends Actor {
       
       //create final dialog data
       const dialogData = {
-        window: {title: game.i18n.localize("Mosh.Cover")},
+        window: {title: game.i18n.localize("Moshru.Cover")},
         classes: ["macro-popup-dialog"],
         position: {width: 600},
         content: msgContent,
         buttons: [
           {
-            label: game.i18n.localize("Mosh.OK"),
+            label: game.i18n.localize("Moshru.OK"),
 			      action: `action_okay`,
             callback: (event, button, dialog) => {
               this.update({
@@ -2737,25 +2737,25 @@ export class MothershipActor extends Actor {
       
       //create final dialog data
       const dialogData = {
-        window: {title: game.i18n.localize("Mosh.DistressSignal")},
+        window: {title: game.i18n.localize("Moshru.DistressSignal")},
         classes: ["macro-popup-dialog"],
         position: {width: 600,height: 265},
         content: msgContent,
         buttons: [
           {
-            label: game.i18n.localize("Mosh.Advantage"),
+            label: game.i18n.localize("Moshru.Advantage"),
 			      action: `action_advantage`,
             callback: () => this.rollTable(game.settings.get('moshru', 'table1eDistressSignal'), `1d10 [+]`, `low`, true, false, null, null),
             icon: `fas fa-angle-double-up`
           },
           {
-            label: game.i18n.localize("Mosh.Normal"),
+            label: game.i18n.localize("Moshru.Normal"),
 			      action: `action_normal`,
             callback: () => this.rollTable(game.settings.get('moshru', 'table1eDistressSignal'), `1d10`, `low`, true, false, null, null),
             icon: `fas fa-minus`
           },
           {
-            label: game.i18n.localize("Mosh.Disadvantage"),
+            label: game.i18n.localize("Moshru.Disadvantage"),
 			      action: `action_disadvantage`,
             callback: () => this.rollTable(game.settings.get('moshru', 'table1eDistressSignal'), `1d10 [-]`, `low`, true, false, null, null),
             icon: `fas fa-angle-double-down`
@@ -2779,25 +2779,25 @@ export class MothershipActor extends Actor {
       `;
       //create final dialog data
       const dialogData = {
-        window: {title: game.i18n.localize("Mosh.MaintenanceCheck")},
+        window: {title: game.i18n.localize("Moshru.MaintenanceCheck")},
         classes: ["macro-popup-dialog"],
         position: {width: 600,height: 265},
         content: msgContent,
         buttons: [
           {
-            label: game.i18n.localize("Mosh.Advantage"),
+            label: game.i18n.localize("Moshru.Advantage"),
 			      action: `action_advantage`,
             callback: () => this.rollTable(`maintenanceCheck`, `1d100 [+]`, `low`, null, null, null, null),
             icon: `fas fa-angle-double-up`
           },
           {
-            label: game.i18n.localize("Mosh.Normal"),
+            label: game.i18n.localize("Moshru.Normal"),
 			      action: `action_normal`,
             callback: () => this.rollTable(`maintenanceCheck`, `1d100`, `low`, null, null, null, null),
             icon: `fas fa-minus`
           },
           {
-            label: game.i18n.localize("Mosh.Disadvantage"),
+            label: game.i18n.localize("Moshru.Disadvantage"),
 			      action: `action_disadvantage`,
             callback: () => this.rollTable(`maintenanceCheck`, `1d100 [-]`, `low`, null, null, null, null),
             icon: `fas fa-angle-double-down`
@@ -2821,25 +2821,25 @@ export class MothershipActor extends Actor {
       `;
       //create final dialog data
       const dialogData = {
-        window: {title: game.i18n.localize("Mosh.BankrupcySave")},
+        window: {title: game.i18n.localize("Moshru.BankrupcySave")},
         classes: ["macro-popup-dialog"],
         position: {width: 600,height: 265},
         content: msgContent,
         buttons: [
           {
-            label: game.i18n.localize("Mosh.Advantage"),
+            label: game.i18n.localize("Moshru.Advantage"),
 			      action: `action_advantage`,
             callback: () => this.rollCheck(`1d100 [+]`, `low`, `bankruptcySave`, null, null, null),
             icon: `fas fa-angle-double-up`
           },
           {
-            label: game.i18n.localize("Mosh.Normal"),
+            label: game.i18n.localize("Moshru.Normal"),
 			      action: `action_normal`,
             callback: () => this.rollCheck(`1d100`, `low`, `bankruptcySave`, null, null, null),
             icon: `fas fa-minus`
           },
           {
-            label: game.i18n.localize("Mosh.Disadvantage"),
+            label: game.i18n.localize("Moshru.Disadvantage"),
 			      action: `action_disadvantage`,
             callback: () => this.rollCheck(`1d100 [-]`, `low`, `bankruptcySave`, null, null, null),
             icon: `fas fa-angle-double-down`
@@ -2859,8 +2859,8 @@ export class MothershipActor extends Actor {
     return new Promise(async (resolve) => {
       //create pop-up HTML
 
-      let moraleCheck = game.i18n.localize("Mosh.MoraleCheck")
-      let moraleCheckDescription = game.i18n.localize("Mosh.MoraleCheckDescription")
+      let moraleCheck = game.i18n.localize("Moshru.MoraleCheck")
+      let moraleCheckDescription = game.i18n.localize("Moshru.MoraleCheckDescription")
 
       let msgContent = `
       <style>
@@ -2904,19 +2904,19 @@ export class MothershipActor extends Actor {
         content: msgContent,
         buttons: [
           {
-            label: game.i18n.localize("Mosh.Advantage"),
+            label: game.i18n.localize("Moshru.Advantage"),
 			      action: `action_advantage`,
             callback: () => this.rollCheck(`1d10 [+]`, `high-equal`, `moraleCheck`, null, null, null),
             icon: `fas fa-angle-double-up`
           },
           {
-            label: game.i18n.localize("Mosh.Normal"),
+            label: game.i18n.localize("Moshru.Normal"),
 			      action: `action_normal`,
             callback: () => this.rollCheck(`1d10`, `high-equal`, `moraleCheck`, null, null, null),
             icon: `fas fa-minus`
           },
           {
-            label: game.i18n.localize("Mosh.Disadvantage"),
+            label: game.i18n.localize("Moshru.Disadvantage"),
 			      action: `action_disadvantage`,
             callback: () => this.rollCheck(`1d10 [-]`, `high-equal`, `moraleCheck`, null, null, null),
             icon: `fas fa-angle-double-down`

@@ -1,4 +1,4 @@
-## MoSh | Unofficial Mothership RPG
+## MoShRu | Unofficial Mothership RPG
 
 Неофициальная реализация системы Mothership от Tuesday Knight для Foundry VTT на русском языке. Mothership принадлежит Tuesday Knight Games, её можно приобрести по адресу https://mothershiprpg.com/.
 

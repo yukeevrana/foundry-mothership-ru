@@ -2,7 +2,7 @@
 
     <div class="{{cssClass}} characterGeneratorSkillPopup">
         <div>
-            <p class="skillpopupDescription">{{localize 'Mosh.CharacterGenerator.SkillOption.ChoiceText'}}</p>
+            <p class="skillpopupDescription">{{localize 'Moshru.CharacterGenerator.SkillOption.ChoiceText'}}</p>
         </div>
         <div class="grid grid-2col widegap">
             {{#each options}}
@@ -14,28 +14,28 @@
                 <ul>
                     {{#if this.master}}
                     <li>
-                        {{localize 'Mosh.SkillRankMaster'}} : {{this.master}}
+                        {{localize 'Moshru.SkillRankMaster'}} : {{this.master}}
                     </li>
                     {{/if}}
                     {{#if this.expert}}
                     <li>
-                        {{localize 'Mosh.SkillRankExpert'}} : {{this.expert}}
+                        {{localize 'Moshru.SkillRankExpert'}} : {{this.expert}}
                     </li>
                     {{/if}}
                     {{#if this.trained}}
                     <li>
-                        {{localize 'Mosh.SkillRankTrained'}} : {{this.trained}}
+                        {{localize 'Moshru.SkillRankTrained'}} : {{this.trained}}
                     </li>
                     {{/if}}
                     {{#if this.master_full_set}}
                     <li>
-                        {{localize 'Mosh.SkillRankMaster'}} & {{localize 'Mosh.SkillsPrerequisite'}} :
+                        {{localize 'Moshru.SkillRankMaster'}} & {{localize 'Moshru.SkillsPrerequisite'}} :
                         {{this.master_full_set}}
                     </li>
                     {{/if}}
                     {{#if this.expert_full_set}}
                     <li>
-                        {{localize 'Mosh.SkillRankExpert'}} & {{localize 'Mosh.SkillsPrerequisite'}} :
+                        {{localize 'Moshru.SkillRankExpert'}} & {{localize 'Moshru.SkillsPrerequisite'}} :
                         {{this.expert_full_set}}
                     </li>
                     {{/if}}

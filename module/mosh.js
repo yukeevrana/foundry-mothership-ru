@@ -123,7 +123,7 @@ Hooks.once("ready", async function () {
   
 });
 
-//add custom damage dice for MOSH
+//add custom damage dice for MOSHRU
 Hooks.once('diceSoNiceReady', (dice3d) => {
   dice3d.addColorset(
     {
@@ -140,7 +140,7 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
   )
 })
 
-//add custom damage dice for MOSH
+//add custom damage dice for MOSHRU
 Hooks.once('diceSoNiceReady', (dice3d) => {
   dice3d.addColorset(
     {
@@ -157,7 +157,7 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
   )
 })
 
-//add custom panic dice for MOSH
+//add custom panic dice for MOSHRU
 Hooks.once('diceSoNiceReady', (dice3d) => {
   dice3d.addColorset(
     {

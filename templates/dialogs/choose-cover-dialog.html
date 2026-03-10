@@ -1,14 +1,14 @@
     <div class ="macro_window">
       <div class="grid grid-2col" style="grid-template-columns: 150px auto">
         <div class="macro_img"><img src="systems/moshru/images/icons/ui/attributes/armor.png"/></div>
-        <div class="macro_desc"><h4>{{ localize 'Mosh.Cover' }}</h4>
-          {{ localize 'Mosh.TheEnvironmentCanProvideProtectionCalled'}} <strong>{{ localize 'Mosh.Cover'}}</strong>. 
-          {{ localize 'Mosh.ItCanBeDestroyedLikeArmor' }}
-          <strong>{{ localize 'Mosh.IfYouShotWhileInCover'}}.</strong> {{ localize 'Mosh.YourCoverValuesAreDisplayedIn'}} <strong><span style="color: orangered">{{ localize 'Mosh.Orange' }}</span></strong>.</div>
+        <div class="macro_desc"><h4>{{ localize 'Moshru.Cover' }}</h4>
+          {{ localize 'Moshru.TheEnvironmentCanProvideProtectionCalled'}} <strong>{{ localize 'Moshru.Cover'}}</strong>. 
+          {{ localize 'Moshru.ItCanBeDestroyedLikeArmor' }}
+          <strong>{{ localize 'Moshru.IfYouShotWhileInCover'}}.</strong> {{ localize 'Moshru.YourCoverValuesAreDisplayedIn'}} <strong><span style="color: orangered">{{ localize 'Moshru.Orange' }}</span></strong>.</div>
       </div>
     </div>
     <div class="macro_prompt">
-      {{ localize 'Mosh.SelectYourCurrentCoverSituation'}}:
+      {{ localize 'Moshru.SelectYourCurrentCoverSituation'}}:
     </div>
     <!-- NO COVER -->
     <label for="none">
@@ -17,7 +17,7 @@
           <input type="radio" id="none" name="cover" value="none" {{none_checked}}>
           <div class="macro_desc" style="display: table; padding-left: 5px;">
             <span style="display: table-cell; vertical-align: middle;">
-              <strong>{{ localize 'Mosh.NoCover'}}</strong><br>{{ localize 'Mosh.UnprotectedOutInTheOpen'}}
+              <strong>{{ localize 'Moshru.NoCover'}}</strong><br>{{ localize 'Moshru.UnprotectedOutInTheOpen'}}
             </span>
           </div>
           <div class="macro_desc moshru health resource healthspread minmaxtopstat">
@@ -27,8 +27,8 @@
               <div class="maxhealth-input whiteText" type="text" data-dtype="Number">{{curDR}}</div>
             </div>
             <div class="grid">
-              <div class="healthmaxtext moshru health resource">{{ localize 'Mosh.ArmorPoints'}}</div>
-              <div class="healthmaxtext moshru health resource">{{ localize 'Mosh.DMGReduction'}}</div>
+              <div class="healthmaxtext moshru health resource">{{ localize 'Moshru.ArmorPoints'}}</div>
+              <div class="healthmaxtext moshru health resource">{{ localize 'Moshru.DMGReduction'}}</div>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@
           <input type="radio" id="insignificant" name="cover" value="insignificant" {{insignificant_checked}}>
           <div class="macro_desc" style="display: table; padding-left: 5px;">
             <span style="display: table-cell; vertical-align: middle;">
-              <strong>{{ localize 'Mosh.InsignificantCover'}}</strong><br> {{ localize 'Mosh.WoodFurnitureDoorsShields'}}
+              <strong>{{ localize 'Moshru.InsignificantCover'}}</strong><br> {{ localize 'Moshru.WoodFurnitureDoorsShields'}}
             </span>
           </div>
           <div class="macro_desc moshru health resource healthspread minmaxtopstat">
@@ -54,8 +54,8 @@
               <div class="maxhealth-input whiteText" type="text" data-dtype="Number">{{curDR}}</div>
             </div>
             <div class="grid">
-              <div class="healthmaxtext moshru health resource">{{ localize 'Mosh.ArmorPoints'}}</div>
-              <div class="healthmaxtext moshru health resource">{{ localize 'Mosh.DMGReduction'}}</div>
+              <div class="healthmaxtext moshru health resource">{{ localize 'Moshru.ArmorPoints'}}</div>
+              <div class="healthmaxtext moshru health resource">{{ localize 'Moshru.DMGReduction'}}</div>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
           <input type="radio" id="light" name="cover" value="light" {{light_checked}}>
           <div class="macro_desc" style="display: table; padding-left: 5px;">
             <span style="display: table-cell; vertical-align: middle;">
-              <strong>{{ localize 'Mosh.LightCover'}}</strong><br> {{ localize 'Mosh.TreesBulkheadWallsMetalFurniture'}}
+              <strong>{{ localize 'Moshru.LightCover'}}</strong><br> {{ localize 'Moshru.TreesBulkheadWallsMetalFurniture'}}
             </span>
           </div>
           <div class="macro_desc moshru health resource healthspread minmaxtopstat">
@@ -81,8 +81,8 @@
               <div class="maxhealth-input whiteText" type="text" data-dtype="Number">{{curDR}}</div>
             </div>
             <div class="grid">
-              <div class="healthmaxtext moshru health resource">{{ localize 'Mosh.ArmorPoints'}}</div>
-              <div class="healthmaxtext moshru health resource">{{ localize 'Mosh.DMGReduction'}}</div>
+              <div class="healthmaxtext moshru health resource">{{ localize 'Moshru.ArmorPoints'}}</div>
+              <div class="healthmaxtext moshru health resource">{{ localize 'Moshru.DMGReduction'}}</div>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@
           <input type="radio" id="heavy" name="cover" value="heavy" {{heavy_checked}}>
           <div class="macro_desc" style="display: table; padding-left: 5px;">
             <span style="display: table-cell; vertical-align: middle;">
-              <strong>{{ localize 'Mosh.HeavyCover'}}</strong><br> {{ localize 'Mosh.AirlockDoorsCementBeamsShips'}}
+              <strong>{{ localize 'Moshru.HeavyCover'}}</strong><br> {{ localize 'Moshru.AirlockDoorsCementBeamsShips'}}
             </span>
           </div>
           <div class="macro_desc moshru health resource healthspread minmaxtopstat">
@@ -111,8 +111,8 @@
               </div>
             </div>
             <div class="grid">
-              <div class="healthmaxtext moshru health resource">{{ localize 'Mosh.ArmorPoints'}}</div>
-              <div class="healthmaxtext moshru health resource">{{ localize 'Mosh.DMGReduction'}}</div>
+              <div class="healthmaxtext moshru health resource">{{ localize 'Moshru.ArmorPoints'}}</div>
+              <div class="healthmaxtext moshru health resource">{{ localize 'Moshru.DMGReduction'}}</div>
             </div>
           </div>
         </div>

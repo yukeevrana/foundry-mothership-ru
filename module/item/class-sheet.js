@@ -73,7 +73,7 @@ export class MothershipClassSheet extends MothershipItemSheet {
     const droppedObject = await fromUuid(droppedUuid.uuid);
     if (droppedObject.type == "skill"){
       if(event.currentTarget == null) {
-          ui.notifications.error(game.i18n.localize("Mosh.Errors.NoDropTarget"));
+          ui.notifications.error(game.i18n.localize("Moshru.Errors.NoDropTarget"));
           return this.render(false);
       }
       console.log(event.currentTarget.id);
@@ -84,7 +84,7 @@ export class MothershipClassSheet extends MothershipItemSheet {
           let array_index = parent_fixed_or.getAttribute("index");
           let skills = this.object.system.base_adjustment.skills_granted;
           if(skills[array_index].includes(droppedObject.uuid)){
-            ui.notifications.warn(game.i18n.localize("Mosh.Errors.SkillAlreadyInList"));
+            ui.notifications.warn(game.i18n.localize("Moshru.Errors.SkillAlreadyInList"));
             return this.render(false);
           }
           skills[array_index].push(droppedObject.uuid);
@@ -94,7 +94,7 @@ export class MothershipClassSheet extends MothershipItemSheet {
         }else{
           let skills = this.object.system.base_adjustment.skills_granted;
           if (skills.includes(droppedObject.uuid)){
-            ui.notifications.warn(game.i18n.localize("Mosh.Errors.SkillAlreadyInList"));
+            ui.notifications.warn(game.i18n.localize("Moshru.Errors.SkillAlreadyInList"));
             return this.render(false);
           }
           skills.push(droppedObject.uuid);
@@ -105,7 +105,7 @@ export class MothershipClassSheet extends MothershipItemSheet {
       else if(event.currentTarget.id =="skills.common"){
         let skills = this.object.system.common_skills;
         if (skills.includes(droppedObject.uuid)){
-          ui.notifications.warn(game.i18n.localize("Mosh.Errors.SkillAlreadyInList"));
+          ui.notifications.warn(game.i18n.localize("Moshru.Errors.SkillAlreadyInList"));
           return this.render(false);
         }
         skills.push(droppedObject.uuid);
@@ -120,7 +120,7 @@ export class MothershipClassSheet extends MothershipItemSheet {
 
         let options = this.object.system.selected_adjustment.choose_skill_or;
         if(options[parent_index][index].from_list.includes(droppedObject.uuid)){
-          ui.notifications.warn(game.i18n.localize("Mosh.Errors.SkillAlreadyInList"));
+          ui.notifications.warn(game.i18n.localize("Moshru.Errors.SkillAlreadyInList"));
           return this.render(false);
         }
         options[parent_index][index].from_list.push(droppedObject.uuid);
@@ -263,15 +263,15 @@ export class MothershipClassSheet extends MothershipItemSheet {
       let choose_stat = this.object.system.selected_adjustment.choose_stat;
 
       let DialogContent = `
-        <div class="macro_desc" style="margin-bottom : -5px;"><h4>${game.i18n.localize("Mosh.CharacterGenerator.StatOption")}</h4></div>\
-        <div> <input type="number" id='modification' placeholder="${game.i18n.localize("Mosh.Value")}" /></label></div>\
-        <div> <input type="checkbox" id='strength' />${game.i18n.localize("Mosh.Strength")}</label></div>\
-        <div> <input type="checkbox" id='speed' />${game.i18n.localize("Mosh.Speed")}</label></div>\
-        <div> <input type="checkbox" id='intellect' />${game.i18n.localize("Mosh.Intellect")}</label></div>\
-        <div> <input type="checkbox" id='combat' />${game.i18n.localize("Mosh.Combat")}</label></div>\
-        <div> <input type="checkbox" id='sanity' />${game.i18n.localize("Mosh.Sanity")}</label></div>\
-        <div> <input type="checkbox" id='fear' />${game.i18n.localize("Mosh.Fear")}</label></div>\
-        <div> <input type="checkbox" id='body' />${game.i18n.localize("Mosh.Body")}</label></div>
+        <div class="macro_desc" style="margin-bottom : -5px;"><h4>${game.i18n.localize("Moshru.CharacterGenerator.StatOption")}</h4></div>\
+        <div> <input type="number" id='modification' placeholder="${game.i18n.localize("Moshru.Value")}" /></label></div>\
+        <div> <input type="checkbox" id='strength' />${game.i18n.localize("Moshru.Strength")}</label></div>\
+        <div> <input type="checkbox" id='speed' />${game.i18n.localize("Moshru.Speed")}</label></div>\
+        <div> <input type="checkbox" id='intellect' />${game.i18n.localize("Moshru.Intellect")}</label></div>\
+        <div> <input type="checkbox" id='combat' />${game.i18n.localize("Moshru.Combat")}</label></div>\
+        <div> <input type="checkbox" id='sanity' />${game.i18n.localize("Moshru.Sanity")}</label></div>\
+        <div> <input type="checkbox" id='fear' />${game.i18n.localize("Moshru.Fear")}</label></div>\
+        <div> <input type="checkbox" id='body' />${game.i18n.localize("Moshru.Body")}</label></div>
       `
 
       let d = new foundry.applications.api.DialogV2({
@@ -311,7 +311,7 @@ export class MothershipClassSheet extends MothershipItemSheet {
               new_stat_option.stats.push("body");
             }
             if(new_stat_option.stats.length < 2){
-              ui.notifications.error(game.i18n.localize("Mosh.classNewStatOptionEmptyError"));
+              ui.notifications.error(game.i18n.localize("Moshru.classNewStatOptionEmptyError"));
               return;
             }
 
