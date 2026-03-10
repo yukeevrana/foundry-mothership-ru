@@ -1,19 +1,19 @@
 {
-  "id": "mosh",
+  "id": "moshru",
   "title": "MoSh - Unofficial Mothership",
   "description": "The unofficial Mothership system for FoundryVTT.",
   "version": "0.4.31",
   "esmodules": [
-    "module/mosh.js"
+    "module/moshru.js"
   ],
   "styles": [
-    "css/mosh.css"
+    "css/moshru.css"
   ],
   "packs": [
     {
       "name": "conditions_1e",
       "label": "Conditions (1e)",
-      "system": "mosh",
+      "system": "moshru",
       "path": "packs/conditions_1e.db",
       "type": "Item",
       "flags": {},
@@ -25,7 +25,7 @@
     {
       "name": "macros_hotbar_1e",
       "label": "Hotbar Macros (1e)",
-      "system": "mosh",
+      "system": "moshru",
       "path": "packs/macros_hotbar_1e.db",
       "type": "Macro",
       "flags": {},
@@ -37,7 +37,7 @@
     {
       "name": "macros_triggered_1e",
       "label": "Triggered Macros (1e)",
-      "system": "mosh",
+      "system": "moshru",
       "path": "packs/macros_triggered_1e.db",
       "type": "Macro",
       "flags": {},
@@ -49,7 +49,7 @@
     {
       "name": "rolltables_1e",
       "label": "Rolltables (1e)",
-      "system": "mosh",
+      "system": "moshru",
       "path": "packs/rolltables_1e.db",
       "type": "RollTable",
       "flags": {},
@@ -61,7 +61,7 @@
     {
       "name": "conditions_0e",
       "label": "Conditions (0e)",
-      "system": "mosh",
+      "system": "moshru",
       "path": "packs/conditions_0e.db",
       "type": "Item",
       "flags": {},
@@ -73,7 +73,7 @@
     {
       "name": "macros_hotbar_0e",
       "label": "Hotbar Macros (0e)",
-      "system": "mosh",
+      "system": "moshru",
       "path": "packs/macros_hotbar_0e.db",
       "type": "Macro",
       "flags": {},
@@ -85,7 +85,7 @@
     {
       "name": "macros_triggered_0e",
       "label": "Triggered Macros (0e)",
-      "system": "mosh",
+      "system": "moshru",
       "path": "packs/macros_triggered_0e.db",
       "type": "Macro",
       "flags": {},
@@ -97,7 +97,7 @@
     {
       "name": "rolltables_0e",
       "label": "Rolltables (0e)",
-      "system": "mosh",
+      "system": "moshru",
       "path": "packs/rolltables_0e.db",
       "type": "RollTable",
       "flags": {},

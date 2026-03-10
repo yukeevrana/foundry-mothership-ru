@@ -1,9 +1,9 @@
 //init vars
-let macroTarget = game.settings.get('mosh','macroTarget');
+let macroTarget = game.settings.get('moshru','macroTarget');
 //warn user if character is not selected
 if ((macroTarget === 'character' && !game.user.character) || (macroTarget === 'token' && !canvas.tokens.controlled.length)) {
   //warn player
-  game.mosh.noCharSelected();
+  game.moshru.noCharSelected();
 //else pop up the dialog
 } else {
   //pop up the death save dialog box
@@ -17,7 +17,7 @@ if ((macroTarget === 'character' && !game.user.character) || (macroTarget === 't
       <div class="macro_window">
         <div class="grid grid-2col" style="grid-template-columns: 150px auto">
           <div class="macro_img">
-            <img src="systems/mosh/images/icons/ui/rolltables/death_save.png" />
+            <img src="systems/moshru/images/icons/ui/rolltables/death_save.png" />
           </div>
           <div class="macro_desc">
             <h4>Death Save</h4>
@@ -33,19 +33,19 @@ if ((macroTarget === 'character' && !game.user.character) || (macroTarget === 't
       {
         label: "Advantage",
         action: "action_advantage",
-        callback: () => game.mosh.initRollTable(game.settings.get("mosh","table1eDeath"), "1d10 [+]", "low", true, false, null, null),
+        callback: () => game.moshru.initRollTable(game.settings.get("moshru","table1eDeath"), "1d10 [+]", "low", true, false, null, null),
         icon: `fas fa-angle-double-up`
       },
       {
         label: "Normal",
         action: "action_normal",
-        callback: () => game.mosh.initRollTable(game.settings.get("mosh","table1eDeath"), "1d10", "low", true, false, null, null),
+        callback: () => game.moshru.initRollTable(game.settings.get("moshru","table1eDeath"), "1d10", "low", true, false, null, null),
         icon: `fas fa-minus`
       },
       {
         label: "Disadvantage",
         action: "action_disadvantage",
-        callback: () => game.mosh.initRollTable(game.settings.get("mosh","table1eDeath"), "1d10 [-]", "low", true, false, null, null),
+        callback: () => game.moshru.initRollTable(game.settings.get("moshru","table1eDeath"), "1d10 [-]", "low", true, false, null, null),
         icon: `fas fa-angle-double-down`
       }
     ]

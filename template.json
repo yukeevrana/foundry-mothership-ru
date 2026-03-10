@@ -230,8 +230,8 @@
         "value": 1
       },
       "images" : {
-        "layout" : "systems/mosh/images/Galloway_Top.png",
-        "beauty" : "systems/mosh/images/Galloway_Top.png"
+        "layout" : "systems/moshru/images/Galloway_Top.png",
+        "beauty" : "systems/moshru/images/Galloway_Top.png"
       },
       "runSetup" : true,
       "megadamage" : {

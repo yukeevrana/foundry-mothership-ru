@@ -1,1 +1,1 @@
-game.mosh.initModifyActor('system.supplies.upgrades.value',-1,null,true);
+game.moshru.initModifyActor('system.supplies.upgrades.value',-1,null,true);

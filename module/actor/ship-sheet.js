@@ -7,8 +7,8 @@ export class MothershipShipSheet extends foundry.appv1.sheets.ActorSheet {
     /** @override */
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["mosh", "sheet", "actor", "ship"],
-            template: "systems/mosh/templates/actor/ship-sheet.html",
+            classes: ["moshru", "sheet", "actor", "ship"],
+            template: "systems/moshru/templates/actor/ship-sheet.html",
             width: 700,
             height: 650,
             tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "character" }],
@@ -39,10 +39,10 @@ export class MothershipShipSheet extends foundry.appv1.sheets.ActorSheet {
             superData.settings = {};
         }
 
-        superData.settings.useCalm = game.settings.get("mosh", "useCalm");
-        superData.settings.hideWeight = game.settings.get("mosh", "hideWeight");
-        superData.settings.firstEdition = game.settings.get("mosh", "firstEdition");
-        superData.settings.androidPanic = game.settings.get("mosh", "androidPanic");
+        superData.settings.useCalm = game.settings.get("moshru", "useCalm");
+        superData.settings.hideWeight = game.settings.get("moshru", "hideWeight");
+        superData.settings.firstEdition = game.settings.get("moshru", "firstEdition");
+        superData.settings.androidPanic = game.settings.get("moshru", "androidPanic");
 
         let maxHull = superData.supplies.hull.max;
 

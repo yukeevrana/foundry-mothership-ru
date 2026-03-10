@@ -1,1 +1,1 @@
-game.mosh.initModifyActor('system.supplies.hull.value',-1,null,true);
+game.moshru.initModifyActor('system.supplies.hull.value',-1,null,true);

@@ -8,8 +8,8 @@ export class MothershipActorSheet extends foundry.appv1.sheets.ActorSheet {
   /** @override */
   static get defaultOptions() {
     var options = {
-      classes: ["mosh", "sheet", "actor", "character"],
-      template: "systems/mosh/templates/actor/actor-sheet.html",
+      classes: ["moshru", "sheet", "actor", "character"],
+      template: "systems/moshru/templates/actor/actor-sheet.html",
       width: 820,
       height: 820,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "character" }],
@@ -41,10 +41,10 @@ export class MothershipActorSheet extends foundry.appv1.sheets.ActorSheet {
     if (data.data.system.settings == null) {
       data.data.system.settings = {};
     }
-    data.data.system.settings.useCalm = game.settings.get("mosh", "useCalm");
-    data.data.system.settings.hideWeight = game.settings.get("mosh", "hideWeight");
-    data.data.system.settings.firstEdition = game.settings.get("mosh", "firstEdition");
-    data.data.system.settings.androidPanic = game.settings.get("mosh", "androidPanic");
+    data.data.system.settings.useCalm = game.settings.get("moshru", "useCalm");
+    data.data.system.settings.hideWeight = game.settings.get("moshru", "hideWeight");
+    data.data.system.settings.firstEdition = game.settings.get("moshru", "firstEdition");
+    data.data.system.settings.androidPanic = game.settings.get("moshru", "androidPanic");
 
     data.data.enriched = [];
     data.data.enriched.notes = await foundry.applications.ux.TextEditor.implementation.enrichHTML(superData.notes, {async: true});

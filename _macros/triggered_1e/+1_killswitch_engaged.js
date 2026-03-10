@@ -1,1 +1,1 @@
-game.mosh.initModifyItem('g6CuxCqbyRnNa57N',1);
+game.moshru.initModifyItem('g6CuxCqbyRnNa57N',1);

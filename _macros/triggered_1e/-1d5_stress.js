@@ -1,1 +1,1 @@
-game.mosh.initModifyActor('system.other.stress.value',null,'-1d5',true);
+game.moshru.initModifyActor('system.other.stress.value',null,'-1d5',true);

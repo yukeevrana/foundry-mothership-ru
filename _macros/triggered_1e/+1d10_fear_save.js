@@ -1,1 +1,1 @@
-game.mosh.initModifyActor('system.stats.fear.value',null,'1d10',true);
+game.moshru.initModifyActor('system.stats.fear.value',null,'1d10',true);

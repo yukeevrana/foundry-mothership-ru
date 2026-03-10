@@ -43,14 +43,14 @@
 
 /* Branding */
 #logo {
-  content: url("/systems/mosh/images/icons/ui/system/logo.webp");
+  content: url("/systems/moshru/images/icons/ui/system/logo.webp");
   width: 100px;
   height: 50px;
 }
 
 #pause>img {
   background: none;
-  content: url("/systems/mosh/images/icons/ui/system/pause.webp");
+  content: url("/systems/moshru/images/icons/ui/system/pause.webp");
   width: 200px;
   height: 200px;
   top: -95px;
@@ -84,23 +84,23 @@ p {
   /* font-family: "Montserrat", "Arial Black", sans-serif; */
 }
 
-.mosh ::-webkit-scrollbar-thumb {
+.moshru ::-webkit-scrollbar-thumb {
   outline: none;
   border-radius: 3px;
   background: black;
   border: 1px solid white;
 }
 
-.mosh .window-content{
+.moshru .window-content{
   scrollbar-width: thin;
   scrollbar-color: black #fff;
 }
 
-.mosh .white{
+.moshru .white{
   color:white;
 }
 
-.mosh .darkgrey{
+.moshru .darkgrey{
   color:rgb(92, 92, 92);
 }
 /* .chat-message, #chat-form, .textarea{
@@ -244,24 +244,24 @@ p {
 }
 
 
-/* Styles limited to mosh sheets */
-.mosh .item-form {
+/* Styles limited to moshru sheets */
+.moshru .item-form {
   font-family: "Roboto", sans-serif;
 }
 
-.mosh input {
+.moshru input {
   font-weight: inherit;
   font-family: 'Roboto';
 }
 
-.mosh .center-icon{
+.moshru .center-icon{
   font-size: 42px;
   align-items: center;
   justify-content: center;
   display: flex;
 }
 
-.mosh .transponder input[type="checkbox"] {
+.moshru .transponder input[type="checkbox"] {
   /* display: none; */
   appearance: inherit;
   border: 2px white;
@@ -270,7 +270,7 @@ p {
 }
 
 
-.mosh .transponder input[type="checkbox"]:checked, .mosh input[type="radio"]:checked {
+.moshru .transponder input[type="checkbox"]:checked, .moshru input[type="radio"]:checked {
   background: white;
     border-radius: 100px;
     appearance: inherit;
@@ -278,7 +278,7 @@ p {
     box-shadow: 0 0 15px white;
 }
 
-.mosh .transponder input[type="checkbox"] span {
+.moshru .transponder input[type="checkbox"] span {
   color: grey;
   position: relative;
   /* margin-left: -1rem; */
@@ -290,7 +290,7 @@ p {
   bottom: 2px;
 }
 
-.mosh .transponder input[type="checkbox"]:checked span {
+.moshru .transponder input[type="checkbox"]:checked span {
   color: grey;
   position: relative;
   /* margin-left: -1rem; */
@@ -317,7 +317,7 @@ p {
   }
 }
 
-.mosh .char-header {
+.moshru .char-header {
   -webkit-box-flex: 0;
   /* -ms-flex: 0 0 610px;
   flex: 0 0 610px; */
@@ -338,7 +338,7 @@ p {
 
 
 
-.mosh .char-header .profile-img {
+.moshru .char-header .profile-img {
   -webkit-box-flex: 0;
   width: 100px;
   height: 100px;
@@ -346,13 +346,13 @@ p {
   margin-top: 10px;
 }
 
-.mosh .char-header .header-fields {
+.moshru .char-header .header-fields {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.mosh .char-header .header-grid {
+.moshru .char-header .header-grid {
   display: grid;
   grid-template-areas:
   'header header header'
@@ -365,24 +365,24 @@ p {
   container-type: inline-size;
 }
 
-.mosh .abilities {grid-area: abilities;}
-.mosh .saves {grid-area: saves;}
+.moshru .abilities {grid-area: abilities;}
+.moshru .saves {grid-area: saves;}
 
-.mosh .stress {grid-area: stress;}
-.mosh .health {grid-area: centercol;}
+.moshru .stress {grid-area: stress;}
+.moshru .health {grid-area: centercol;}
 @container (max-width: 610px) {
-  .mosh .health {grid-area: mobilehealth;}
+  .moshru .health {grid-area: mobilehealth;}
 }
-.mosh .healthspread {width:96%;}
+.moshru .healthspread {width:96%;}
 
-.mosh .char-header h1.charname {
+.moshru .char-header h1.charname {
   height: auto;
   padding: 0px;
   margin: 0px 0;
   border-bottom: 0;
 }
 
-.mosh .char-header h1.charname input {
+.moshru .char-header h1.charname input {
   width: 100%;
   height: auto;
 
@@ -396,15 +396,15 @@ p {
   text-align: left;
 }
 
-.mosh .sheet-tabs {
+.moshru .sheet-tabs {
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
 }
 
-.mosh .sheet-body,
-.mosh .sheet-body .tab,
-.mosh .sheet-body .tab .editor {
+.moshru .sheet-body,
+.moshru .sheet-body .tab,
+.moshru .sheet-body .tab .editor {
   height: 100%;
 }
 
@@ -417,26 +417,26 @@ p {
   border-radius: 10px;
 }
 
-.mosh .tox .tox-editor-container {
+.moshru .tox .tox-editor-container {
   background: #fff;
 }
 
-.mosh .tox .tox-edit-area {
+.moshru .tox .tox-edit-area {
   padding: 0 8px;
 }
 
-.mosh .origin {
+.moshru .origin {
   width: 0;
   height: 0;
 }
 
-.mosh .seperatorLine{
+.moshru .seperatorLine{
   border-bottom: 2px solid #111;
   height: 0;
   width: 100%;
 }
 
-.mosh .skill_training_frame{
+.moshru .skill_training_frame{
   height: 47px;
   background: rgb(230,230,230);
   border-radius: 9px;
@@ -445,21 +445,21 @@ p {
   font-weight: 400;
   padding: 8px;
 }
-.mosh .skill_training_text{
+.moshru .skill_training_text{
   font-family: "Roboto", sans-serif;
   font-size: 11pt;
   font-weight: 500;
   color: grey;
 }
 
-.mosh .resource-label {
+.moshru .resource-label {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 3px;
   text-align: center;
 }
 
-.mosh .faded-label {
+.moshru .faded-label {
   text-transform: uppercase;
   margin-bottom: 3px;
   color:rgb(129, 129, 129);
@@ -473,23 +473,23 @@ p {
   text-align: center;
 }
 
-.mosh .tabs {
+.moshru .tabs {
   height: 40px;
   border-top: 2px solid rgb(56, 56, 56);
   border-bottom: 2px solid rgb(56, 56, 56);
 }
 
-.mosh .tabs .item {
+.moshru .tabs .item {
   /* line-height: 40px; */
   font-weight: bold;
 }
 
-.mosh .tabs .item.active {
+.moshru .tabs .item.active {
   text-decoration: underline;
   text-shadow: none;
 }
 
-.mosh .tabs .item.active::before {
+.moshru .tabs .item.active::before {
   font-family: "Font Awesome 6 Pro";
   content: "\f0da";
   color:white;
@@ -499,39 +499,39 @@ p {
   display: inline-block;
 }
 
-.mosh .items-list {
+.moshru .items-list {
   list-style: none;
   margin: 7px 0;
   padding: 0;
   /* overflow-y: auto; */
 }
 
-.mosh .items-list .item-header {
+.moshru .items-list .item-header {
   font-weight: bold;
 }
 
-.mosh .items-list .item {
+.moshru .items-list .item {
   height: 35px;
   line-height: 24px;
   padding: 3px 0;
   border-bottom: 1px solid #BBB;
 }
 
-.mosh .skills-list .item {
+.moshru .skills-list .item {
   height: 36px;
   line-height: 21px;
   padding: 3px 0;
   border-bottom: 1px solid #BBB;
 }
 
-.mosh .items-list .item .item-image {
+.moshru .items-list .item .item-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 24px;
   flex: 0 0 24px;
   margin-right: 5px;
 }
 
-.mosh .roll-image {
+.moshru .roll-image {
   -webkit-box-flex: 0;
   flex: 0 24px;
   margin-top: -3px;
@@ -542,15 +542,15 @@ p {
   border: 1px solid #000;
 }
 
-.mosh .items-list .item img {
+.moshru .items-list .item img {
   display: block;
 }
 
-.mosh .items-list .item-name {
+.moshru .items-list .item-name {
   margin: 0;
 }
 
-.mosh .items-list .skill-name {
+.moshru .items-list .skill-name {
   font-weight: bold;
   font-size: 14px;
   /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
@@ -566,7 +566,7 @@ p {
   overflow: hidden;
 }
 
-.mosh .items-list .skill-stat {
+.moshru .items-list .skill-stat {
   font-size: medium;
   /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
   color: #111;
@@ -579,14 +579,14 @@ p {
   white-space: nowrap;
 }
 
-.mosh .items-list .item-controls {
+.moshru .items-list .item-controls {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 86px;
   flex: 0 0 86px;
   text-align: right;
 }
 
-.mosh .button-black {
+.moshru .button-black {
   font-weight: bold;
   font-size: 16px;
   color: white;
@@ -607,7 +607,7 @@ p {
   cursor: pointer;
 }
 
-.mosh .button-grey {
+.moshru .button-grey {
   font-weight: bold;
   font-size: 16px;
   color: white;
@@ -629,7 +629,7 @@ p {
   /* border: 1px solid #ffffff; */
 }
 
-.mosh .button-white {
+.moshru .button-white {
   font-weight: bold;
   font-size: 16px;
   color: #111;
@@ -643,7 +643,7 @@ p {
 }
 
 /* Dropdown Button */
-.mosh .dropbtn {
+.moshru .dropbtn {
   background-color: #111;
   color: white;
   padding: 16px;
@@ -652,13 +652,13 @@ p {
 }
 
 /* The container <div> - needed to position the dropdown content */
-.mosh.dropdown {
+.moshru.dropdown {
   position: relative;
   display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.mosh .dropdown-content {
+.moshru .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -668,7 +668,7 @@ p {
 }
 
 /* Links inside the dropdown */
-.mosh .dropdown-content a {
+.moshru .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -676,23 +676,23 @@ p {
 }
 
 /* Change color of dropdown links on hover */
-.mosh .dropdown-content a:hover {background-color: #ddd;}
+.moshru .dropdown-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu on hover */
-.mosh .dropdown:hover .dropdown-content {display: block;}
+.moshru .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.mosh .dropdown:hover .dropbtn {background-color: #3d3d3d;}
+.moshru .dropdown:hover .dropbtn {background-color: #3d3d3d;}
 
 
-.mosh .sbt-profile {
+.moshru .sbt-profile {
   width: 100px;
   height: auto;
   border: 0;
   padding: 10px;
 }
 
-.mosh .sbt-crew-name .hidden-item-controls {
+.moshru .sbt-crew-name .hidden-item-controls {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 86px;
   flex: 0 0 86px;
@@ -700,7 +700,7 @@ p {
   display: none;
 }
 
-.mosh .sbt-crew-name:hover .hidden-item-controls {
+.moshru .sbt-crew-name:hover .hidden-item-controls {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 86px;
   flex: 0 0 86px;
@@ -708,7 +708,7 @@ p {
   display: inline;
 }
 
-.mosh .sbt-deckplan{
+.moshru .sbt-deckplan{
   width: 100%;
   height: auto;
   border: 0;
@@ -716,28 +716,28 @@ p {
   transition: 2s;
 }
 
-.mosh .sbt-deckplan-parent{
+.moshru .sbt-deckplan-parent{
   height: 185px;
   overflow: auto;
   transition: 2s;
   border-radius: 10px;
 }
 
-.mosh .sbt-deckplan-parent:hover {
+.moshru .sbt-deckplan-parent:hover {
   z-index: 10000;
   /* height: auto; */
 }
 
-.mosh .sbt-megadamage-menu {
+.moshru .sbt-megadamage-menu {
   padding: 15px;
   /* font-size: 15px; */
 }
 
-.mosh .invert-title{
+.moshru .invert-title{
   mix-blend-mode: difference;
 }
 
-.mosh .tab-select {
+.moshru .tab-select {
   font-size: medium;
   font-weight: bold;
   /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
@@ -745,12 +745,12 @@ p {
   text-align: center;
 }
 
-.mosh .tab-select.active {
+.moshru .tab-select.active {
   text-decoration: underline;
   text-shadow: 0 0 10px white;
 }
 
-/* .mosh .tab-select.active::before {
+/* .moshru .tab-select.active::before {
   font-family: "Font Awesome 6 Pro";
   content: "\f0da";
   color:rgb(255, 113, 113);
@@ -760,7 +760,7 @@ p {
   display: inline-block;
 } */
 
-.mosh .stresstext {
+.moshru .stresstext {
   width: 100%;
   padding: 0.1rem;
   color: white;
@@ -771,7 +771,7 @@ p {
   text-transform: uppercase;
 }
 
-.mosh .smallcircle-input {
+.moshru .smallcircle-input {
   margin: -0.15em;
   height: 40px;
   width: 40px;
@@ -783,7 +783,7 @@ p {
   text-align: center;
 }
 
-.mosh .mainstatmod-input {
+.moshru .mainstatmod-input {
   height: 26px;
   width: 28px;
   /* padding: 0; */
@@ -802,7 +802,7 @@ p {
   background: lightgrey;
 }
 
-.mosh .mainsavemod-input {
+.moshru .mainsavemod-input {
   height: 26px;
   width: 28px;
   /* padding: 0; */
@@ -821,7 +821,7 @@ p {
   background: lightgrey;
 }
 
-.mosh .mainstatmod-title {
+.moshru .mainstatmod-title {
   position: relative;
   color: lightgrey;
   font-size: 1rem;
@@ -833,7 +833,7 @@ p {
   left: 12px;
 }
 
-.mosh .maxhealth-input {
+.moshru .maxhealth-input {
   margin: auto;
   border: 0px solid #111;
   font-size: 1.5rem;
@@ -842,27 +842,27 @@ p {
   background: transparent;
 }
 
-.mosh .greyText{
+.moshru .greyText{
   color: grey;
 }
 
-.mosh .darkGreyText{
+.moshru .darkGreyText{
   color: rgb(56, 56, 56);
 }
 
-.mosh .whiteText{
+.moshru .whiteText{
   color: white;
 }
 
-.mosh .highlightText{
+.moshru .highlightText{
   color: orangered;
 }
 
-.mosh .sizelarge{
+.moshru .sizelarge{
   font-size: 1.1rem;
 }
 
-.mosh .valuewrapper{
+.moshru .valuewrapper{
   grid-column: 1/-1;
   display: grid;
   align-items: start;
@@ -873,7 +873,7 @@ p {
   background: 0;
 }
 
-.mosh .textvaluewrapper{
+.moshru .textvaluewrapper{
   grid-column: 1/-1;
   display: grid;
   align-items: start;
@@ -884,7 +884,7 @@ p {
   background: 0;
 }
 
-.mosh .textvaluewrapper-input{
+.moshru .textvaluewrapper-input{
   margin: auto;
   border: 0px solid #111;
   font-size: 1rem;
@@ -893,7 +893,7 @@ p {
   background: transparent;
 }
 
-.mosh .armorWrapper{
+.moshru .armorWrapper{
   grid-column: 1/-1;
   display: grid;
   align-items: start;
@@ -905,14 +905,14 @@ p {
   width: 100%;
 }
 
-.mosh .blankstat{
+.moshru .blankstat{
   grid-template-rows: 0.3fr 1.1fr 0.4fr;
   justify-self: center;
   display: grid;
   justify-items: center;
 }
 
-.mosh .minmaxtopstat{
+.moshru .minmaxtopstat{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.3fr 1.1fr 0.4fr;
   justify-self: center;
@@ -920,7 +920,7 @@ p {
   justify-items: center;
 }
 
-.mosh .minmaxwrapper{
+.moshru .minmaxwrapper{
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
@@ -932,7 +932,7 @@ p {
   background: white;
 }
 
-.mosh .minmaxwrapper-black{
+.moshru .minmaxwrapper-black{
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
@@ -945,7 +945,7 @@ p {
   color: white;
 }
 
-.mosh .minmaxtext{
+.moshru .minmaxtext{
   text-align: left;
   grid-column: 1/-1;
   /* font-family: "Montserrat", "Arial Black", sans-serif; */
@@ -956,13 +956,13 @@ p {
   text-transform: uppercase;
 }
 
-.mosh .slant{
+.moshru .slant{
   border-right: 2px solid #111;
   height: 100%;
   transform: skewX(-15deg);
 }
 
-.mosh .healthmaxtext{
+.moshru .healthmaxtext{
   grid-column: span 1;
   font-size: 0.7rem;
   font-weight: bold;
@@ -971,19 +971,19 @@ p {
   margin-top: 3px;
 }
 
-.mosh .stresslabel {
+.moshru .stresslabel {
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
   background: #111;
   padding: 0 0.5rem;
 }
 
-.mosh .mainstatwrapper {
+.moshru .mainstatwrapper {
   display: flex;
   width: 95%;
 }
 
-.mosh .mainstat {
+.moshru .mainstat {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 5em;
@@ -992,7 +992,7 @@ p {
   width: 98%;
 }
 
-.mosh .circle-statwrapper {
+.moshru .circle-statwrapper {
   display: flex;
   width: 100%;
   align-items: center;
@@ -1003,7 +1003,7 @@ p {
   flex-direction: column;
 }
 
-.mosh .circle-statwrapper-horizontal {
+.moshru .circle-statwrapper-horizontal {
   display: flex;
   width: 100%;
   align-items: center;
@@ -1014,7 +1014,7 @@ p {
   flex-direction:row;
 }
 
-.mosh .circle-statwrapper-vertical {
+.moshru .circle-statwrapper-vertical {
   display: flex;
   width: 100%;
   align-items: center;
@@ -1025,11 +1025,11 @@ p {
   flex-direction: column;
 }
 
-.mosh .transparentBackground {
+.moshru .transparentBackground {
   background: transparent;
 }
 
-.mosh .section-vertical-flex {
+.moshru .section-vertical-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1037,12 +1037,12 @@ p {
 }
 
 
-.mosh .circle-stat {
+.moshru .circle-stat {
   margin-top: 10px;
   /* width: 98%; */
 }
 
-.mosh .creature-mainstat {
+.moshru .creature-mainstat {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 3em;
@@ -1050,7 +1050,7 @@ p {
   gap: 0;
   width: 100%;
 }
-.mosh .mainstatlabel {
+.moshru .mainstatlabel {
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
   background: #111;
@@ -1060,7 +1060,7 @@ p {
   height: 35px;
 }
 
-.mosh .mainstattext {
+.moshru .mainstattext {
   width: 100%;
   padding: 0.5rem;
   color: white;
@@ -1072,7 +1072,7 @@ p {
 }
 
 
-.mosh .area-title {
+.moshru .area-title {
   width: 100%;
   font-size: 1.0rem;
   font-weight: bold;
@@ -1083,12 +1083,12 @@ p {
   font-family: 'Roboto';
 }
 
-.mosh .circlestatlabel {
+.moshru .circlestatlabel {
   padding: 6px;
   text-align: center;
 }
 
-.mosh .circlestattitle {
+.moshru .circlestattitle {
   width: 100%;
   font-size: 1.0rem;
   font-weight: bold;
@@ -1098,15 +1098,15 @@ p {
   color: grey;
 }
 
-.mosh .black {
+.moshru .black {
   color: black;
 }
 
-.mosh .grey {
+.moshru .grey {
   color: grey;
 }
 
-.mosh .circlestattext {
+.moshru .circlestattext {
   width: 100%;
   font-size: 0.9rem;
   font-weight: bold;
@@ -1114,7 +1114,7 @@ p {
   text-transform: uppercase;
 }
 
-.mosh .circle-input {
+.moshru .circle-input {
   margin: -0.15em;
   height: 50px;
   width: 50px;
@@ -1128,11 +1128,11 @@ p {
   z-index: 5;
 }
 
-.mosh .box1 {
+.moshru .box1 {
   display: none;
 }
 
-.mosh .box2 {
+.moshru .box2 {
   color: green;
   display: block;
   display: flex;
@@ -1140,20 +1140,20 @@ p {
   justify-content: center;
 }
 
-.mosh .circle-input-swapper {
+.moshru .circle-input-swapper {
   width: auto;
   display: inline-block;
 }
 
-.mosh .circle-input-swapper:enabled .box1 {
+.moshru .circle-input-swapper:enabled .box1 {
   display: block;
 }
 
-.mosh .circle-input-swapper:enabled .box2 {
+.moshru .circle-input-swapper:enabled .box2 {
   display: none;
 }
 
-.mosh .textarea-input {
+.moshru .textarea-input {
   font-family: "Roboto", sans-serif;
   margin: -0.15em;
   /* padding: 9px; */
@@ -1168,7 +1168,7 @@ p {
   overflow: hidden;
 }
 
-.mosh .textarea-input-grey {
+.moshru .textarea-input-grey {
   font-family: "Roboto", sans-serif;
   border: 0;
   border-radius: 0.8em;
@@ -1181,7 +1181,7 @@ p {
 }
 
 
-.mosh .square-input {
+.moshru .square-input {
   margin: -0.15em;
   height: 42px;
   width: 45px;
@@ -1194,7 +1194,7 @@ p {
   text-align: center;
 }
 
-.mosh .armor-mod {
+.moshru .armor-mod {
   margin: 3px;
   height: 24px;
   width: 28px;
@@ -1211,7 +1211,7 @@ p {
   right: -19px;
 }
 
-.mosh .savetext {
+.moshru .savetext {
   display: block;
   margin-bottom: .2em;
   width: 100%;
@@ -1223,7 +1223,7 @@ p {
   text-transform: uppercase;
 }
 
-.mosh .savebackground {
+.moshru .savebackground {
   border-radius: 10px;
   background: #111;
   padding-bottom: 0.3rem;
@@ -1231,7 +1231,7 @@ p {
   height: 225px;
 }
 
-.mosh .header {
+.moshru .header {
   grid-area: header;
   background-color: #000;
   display: grid;
@@ -1247,11 +1247,11 @@ p {
   border-radius: 15px;
 }
 
-.mosh .padding{
+.moshru .padding{
   padding: 5px;
 }
 
-.mosh .actor-sidebar-tab{
+.moshru .actor-sidebar-tab{
   border-radius: 0 10px 10px 0;
   /* z-index: -1; */
   box-shadow: 0 0 22px -6px;
@@ -1261,11 +1261,11 @@ p {
   opacity: 0.5;
 }
 
-.mosh .actor-sidebar-tab:hover{
+.moshru .actor-sidebar-tab:hover{
   opacity: 1;
 }
 
-.mosh .actor-sidebar-row{
+.moshru .actor-sidebar-row{
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -1276,11 +1276,11 @@ p {
   padding-left: 10px;
 }
 
-.mosh .actor-sidebar-row:hover{
+.moshru .actor-sidebar-row:hover{
   left: -48px;
 }
 
-.mosh .creature-header-grid {
+.moshru .creature-header-grid {
   display: grid;
   grid-template-areas:
   'name header header'
@@ -1290,7 +1290,7 @@ p {
 }
 
 
-.mosh .creature-header {
+.moshru .creature-header {
   display: flex ;
   flex-direction: row-reverse;
   align-items: center;
@@ -1302,12 +1302,12 @@ p {
   padding: 8px;
 }
 
-.mosh .creature-description-grid{
+.moshru .creature-description-grid{
   display: grid;
   grid-template-columns: 1fr 15em;
 }
 
-.mosh .creature-abilities{
+.moshru .creature-abilities{
   background: rgb(22, 22, 22);
   margin: 12px;
   border: 2px solid white;
@@ -1317,18 +1317,18 @@ p {
   border-radius: 10px;
 }
 
-.mosh .ship-stats-grid{
+.moshru .ship-stats-grid{
   display: grid;
   grid-template-columns: 17em 1fr 18em;
 }
 
-.mosh .ship-sbt-stats-grid{
+.moshru .ship-sbt-stats-grid{
   display: grid;
   grid-template-columns: 10em 1fr 16em;
   gap: 10px;
 }
 
-.mosh .sbt-crew-section{
+.moshru .sbt-crew-section{
   margin: 0px;
   border: 2px solid white;
   outline: 3px solid rgb(22, 22, 22);
@@ -1338,7 +1338,7 @@ p {
   padding: 4px 6px;
 }
 
-.mosh .sbt-text-area{
+.moshru .sbt-text-area{
   font-family: "Roboto", sans-serif;
   margin: -0.15em;
   border: 2px solid #c5c5c5;
@@ -1351,7 +1351,7 @@ p {
   overflow: hidden;
 }
 
-.mosh .sbt-megadamage{
+.moshru .sbt-megadamage{
   /* position: absolute; */
   /* left: 0; */
   /* background: white;
@@ -1375,17 +1375,17 @@ p {
   overflow: hidden;
 }
 
-.mosh .sbt-megadamage-open{
+.moshru .sbt-megadamage-open{
   left: -310px;
   height: auto;
 }
 
-.mosh .sbt-megadamage-closed{
+.moshru .sbt-megadamage-closed{
   left: 0;
   height: 0%;
 }
 
-.mosh .sbt-crew-name {
+.moshru .sbt-crew-name {
   text-align: center;
   font-size: 1rem;
   /* text-transform: uppercase; */
@@ -1393,7 +1393,7 @@ p {
   font-weight: bold;
 }
 
-.mosh .sbt-crew-job {
+.moshru .sbt-crew-job {
   height: auto;
   font-size: 0.9rem;
   color:rgb(129, 129, 129);
@@ -1402,13 +1402,13 @@ p {
   text-align: center;
 }
 
-.mosh .item-armor-grid {
+.moshru .item-armor-grid {
   display: grid;
   grid-template-columns: 1fr 12em;
   gap: 10px;
 }
 
-.mosh .whiteline {
+.moshru .whiteline {
   border-top: 3px solid white;
   grid-area: line;
   margin-top: 5px;
@@ -1417,7 +1417,7 @@ p {
   margin-right: 15px;
 }
 
-.mosh .blackline {
+.moshru .blackline {
   border-top: 3px solid black;
   grid-area: line;
   margin-bottom: 5px;
@@ -1426,7 +1426,7 @@ p {
   margin-top: 5px;
 }
 
-.mosh .greyline {
+.moshru .greyline {
   border-top: 3px solid grey;
   grid-area: line;
   margin-top: 5px;
@@ -1435,7 +1435,7 @@ p {
   margin-right: 15px;
 }
 
-.mosh .headerinputfield {
+.moshru .headerinputfield {
   margin: -0.15em;
   height: auto;
   width: 100%;
@@ -1447,7 +1447,7 @@ p {
   margin-right: 1em;
 }
 
-.mosh .creaturename {
+.moshru .creaturename {
   height: auto;
   width: 100%;
   padding-left: 13px;
@@ -1458,7 +1458,7 @@ p {
   font-family: "Century Gothic", "Diadact Gothic", sans-serif;
 }
 
-.mosh .creaturestat {
+.moshru .creaturestat {
   margin-left: 4px;
   height: auto;
   font-size: 0.9rem;
@@ -1467,24 +1467,24 @@ p {
   color:white;
 }
 
-.mosh .creaturedescription {
+.moshru .creaturedescription {
   height: 400px;
   padding: 10px;
   overflow-y: auto;
 }
-.mosh .creaturedescription .editor-content{
+.moshru .creaturedescription .editor-content{
   overflow-y: visible;
 }
-.mosh .creaturedescription .editor{
+.moshru .creaturedescription .editor{
   overflow: visible;
 }
 
-.mosh .creature-ability-container {
+.moshru .creature-ability-container {
   padding: 4px;
   margin-left: 2px;
 }
 
-.mosh .creature-ability-title {
+.moshru .creature-ability-title {
   text-align: center;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -1493,17 +1493,17 @@ p {
   font-weight: bold;
 }
 
-.mosh .creature-ability-text {
+.moshru .creature-ability-text {
   height: auto;
   font-size: 0.8rem;
   font-family: "Century Gothic", "Diadact Gothic", sans-serif;
   color:white;
 }
 
-.mosh .tox.tox-tinymce {
+.moshru .tox.tox-tinymce {
   min-height: 100%;
 }
-.mosh .editor {
+.moshru .editor {
   height: 100%;
 }
 
@@ -1512,7 +1512,7 @@ p {
   background: 0 !important;
 }
 
-.mosh .headerinputtext {
+.moshru .headerinputtext {
   padding: 0.1rem;
   color: white;
   /* font-family: "Montserrat", "Arial Black", sans-serif; */
@@ -1525,7 +1525,7 @@ p {
   margin-top: 3px;
 }
 
-.mosh .headergrid {
+.moshru .headergrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.25rem;
@@ -1533,16 +1533,16 @@ p {
   /* margin-top: -11px; */
 }
 
-.mosh .headernamegrid {
+.moshru .headernamegrid {
   grid-column: 1/-2;
 }
 
-.mosh .headerrankgrid {
+.moshru .headerrankgrid {
   /* grid-column: span 3; */
   display: inline-flex;
 }
 
-.mosh .circle{
+.moshru .circle{
   color: rgb(22, 22, 22);
   background: white;
   border-radius: 10px;
@@ -1551,7 +1551,7 @@ p {
   height: 15px;
 }
 
-.mosh .circle-f{ /*Filled circle*/
+.moshru .circle-f{ /*Filled circle*/
   color: rgb(22, 22, 22);
   background: rgb(100, 100, 100);
   border-radius: 10px;
@@ -1560,7 +1560,7 @@ p {
   height: 15px;
 }
 
-.mosh .profile {
+.moshru .profile {
   width: 140px;
   height: auto;
   padding: 6px;
@@ -1568,7 +1568,7 @@ p {
   border: 0;
 }
 
-.mosh .rollcontainer {
+.moshru .rollcontainer {
   border-radius: 10em;
   background: #fff;
   padding: 0 0.5rem;
@@ -1579,7 +1579,7 @@ p {
   font-family: "Century Gothic", "Diadact Gothic", sans-serif;
 }
 
-.mosh .rollh1 {
+.moshru .rollh1 {
   width: 107%;
   margin-top: 0;
   margin-left: -9px;
@@ -1592,7 +1592,7 @@ p {
   padding: 5px;
 }
 
-.mosh .rollweaponh1 {
+.moshru .rollweaponh1 {
   height: 32px;
   margin-top: -15px;
   margin-left: -8px;
@@ -1608,7 +1608,7 @@ p {
   width: 70%;
 }
 
-.mosh .rollh2 {
+.moshru .rollh2 {
   font-size: 1.1rem;
   font-weight: normal;
   text-transform: uppercase;
@@ -1618,7 +1618,7 @@ p {
   padding: 5px;
 }
 
-.mosh .rollmods {
+.moshru .rollmods {
   font-size: 0.8rem;
   font-weight: normal;
   text-transform: uppercase;
@@ -1630,7 +1630,7 @@ p {
   color: grey;
 }
 
-.mosh .rollattribute {
+.moshru .rollattribute {
   width: 100%;
   padding: 0.5rem;
   color: black;
@@ -1639,7 +1639,7 @@ p {
   text-align: center;
 }
 
-.mosh .roll-grid {
+.moshru .roll-grid {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1647,7 +1647,7 @@ p {
   width: 100%;
 }
 
-.mosh .roll-result {
+.moshru .roll-result {
   padding: 8px;
   border: 2px solid #111;
   border-radius: 1em;
@@ -1658,7 +1658,7 @@ p {
 }
 
 
-.mosh .roll-target {
+.moshru .roll-target {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 6rem;
@@ -1676,7 +1676,7 @@ p {
   text-align: right;
 }
 
-.mosh .roll-targetbox {
+.moshru .roll-targetbox {
   padding: 2px;
   border: 2px solid #111;
   border-radius: 0.3em;
@@ -1686,7 +1686,7 @@ p {
   margin-right: 0px;
 }
 
-.mosh .roll-damage {
+.moshru .roll-damage {
   font-size: 0.9rem;
   line-height: 1;
   text-align: center;
@@ -1698,7 +1698,7 @@ p {
   font-family: "Montserrat", "Arial Black", sans-serif;
 }
 
-.mosh .roll-damagebox {
+.moshru .roll-damagebox {
   padding: 4px;
   border: 2px solid rgb(117, 0, 0);
   border-radius: 1em;
@@ -1711,48 +1711,48 @@ p {
   margin: auto;
 }
 
-.mosh .items-tab-grid{
+.moshru .items-tab-grid{
   grid-template-columns: 50% 50%;
 }
-.mosh form.actor-generator div.fulllabel {
+.moshru form.actor-generator div.fulllabel {
   border-radius: 2em;
 }
-.mosh form.actor-generator div.ulinputfield {
+.moshru form.actor-generator div.ulinputfield {
   min-height: 150px;
 }
-.mosh form.actor-generator .smalltext {
+.moshru form.actor-generator .smalltext {
   font-size: 0.7rem;
 }
-.mosh form.actor-generator div#generator-header-grid-1col {
+.moshru form.actor-generator div#generator-header-grid-1col {
   grid-column: span 1/span 1;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.mosh form.actor-generator .element-group {
+.moshru form.actor-generator .element-group {
   margin-top: 10px;
 }
-.mosh form.actor-generator .credit-img {
+.moshru form.actor-generator .credit-img {
   height: 30px;
   margin-top: 0%;
 }
-.mosh form.actor-generator .checkbox-round {
+.moshru form.actor-generator .checkbox-round {
   appearance: none;
 }
-.mosh form.actor-generator .checkbox-round:checked {
+.moshru form.actor-generator .checkbox-round:checked {
   background-color: gray;
 }
-.mosh form.actor-generator .clicable-item {
+.moshru form.actor-generator .clicable-item {
   cursor: pointer;
 }
-.mosh .characterGeneratorSkillPopup {
+.moshru .characterGeneratorSkillPopup {
   margin-bottom: 10px;
 }
-.mosh .characterGeneratorSkillPopup .skillpopupDescription {
+.moshru .characterGeneratorSkillPopup .skillpopupDescription {
   text-align: center;
   font-weight: bold;
   padding-bottom: 0.2em;
 }
 
-.mosh .characterGeneratorSkillPopup .center {
+.moshru .characterGeneratorSkillPopup .center {
   text-align: center;
 }
 

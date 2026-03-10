@@ -1,1 +1,1 @@
-game.mosh.initModifyActor('system.stats.intellect.value',-5,null,true);
+game.moshru.initModifyActor('system.stats.intellect.value',-5,null,true);

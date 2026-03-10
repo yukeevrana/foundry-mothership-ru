@@ -1,1 +1,1 @@
-game.mosh.initRollTable(game.settings.get('mosh','table0eDeath'),`1d10 [+]`,`high`,false,false,null,null);
+game.moshru.initRollTable(game.settings.get('moshru','table0eDeath'),`1d10 [+]`,`high`,false,false,null,null);

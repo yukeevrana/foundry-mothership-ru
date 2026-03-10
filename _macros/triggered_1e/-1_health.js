@@ -1,1 +1,1 @@
-game.mosh.initModifyActor('system.health.value',-1,null,true);
+game.moshru.initModifyActor('system.health.value',-1,null,true);

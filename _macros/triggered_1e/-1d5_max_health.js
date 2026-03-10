@@ -1,1 +1,1 @@
-game.mosh.initModifyActor('system.health.max',null,'-1d5',true);
+game.moshru.initModifyActor('system.health.max',null,'-1d5',true);

@@ -1,1 +1,1 @@
-game.mosh.initModifyActor('system.hits.max',-1,null,true);
+game.moshru.initModifyActor('system.hits.max',-1,null,true);

@@ -1,1 +1,1 @@
-game.mosh.initRollTable(`aBnY19jlhPXzibCt`,`1d10`,`high`,false,false,'system.other.stress.value','>');
+game.moshru.initRollTable(`aBnY19jlhPXzibCt`,`1d10`,`high`,false,false,'system.other.stress.value','>');

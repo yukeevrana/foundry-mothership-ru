@@ -16,7 +16,7 @@ import {
 
 Hooks.once('init', async function () {
 
-  game.mosh = {
+  game.moshru = {
     MothershipActor,
     MothershipItem,
     rollItemMacro,
@@ -47,14 +47,14 @@ Hooks.once('init', async function () {
 
   // Register sheet application classes
   foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
-  foundry.documents.collections.Actors.registerSheet("mosh", MothershipActorSheet, {types: ['character'], makeDefault: true});
-  foundry.documents.collections.Actors.registerSheet("mosh", MothershipCreatureSheet, {types: ['creature'], makeDefault: false});
-  foundry.documents.collections.Actors.registerSheet("mosh", MothershipShipSheetSBT, {types: ['ship'], makeDefault: true});
-  foundry.documents.collections.Actors.registerSheet("mosh", MothershipShipSheet, {types: ['ship'], makeDefault: false});
+  foundry.documents.collections.Actors.registerSheet("moshru", MothershipActorSheet, {types: ['character'], makeDefault: true});
+  foundry.documents.collections.Actors.registerSheet("moshru", MothershipCreatureSheet, {types: ['creature'], makeDefault: false});
+  foundry.documents.collections.Actors.registerSheet("moshru", MothershipShipSheetSBT, {types: ['ship'], makeDefault: true});
+  foundry.documents.collections.Actors.registerSheet("moshru", MothershipShipSheet, {types: ['ship'], makeDefault: false});
   foundry.documents.collections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
-  foundry.documents.collections.Items.registerSheet("mosh", MothershipClassSheet, {types: ['class'], makeDefault: true});
-  foundry.documents.collections.Items.registerSheet("mosh", MothershipSkillSheet, {types: ['skill'], makeDefault: true});
-  foundry.documents.collections.Items.registerSheet("mosh", MothershipItemSheet, {
+  foundry.documents.collections.Items.registerSheet("moshru", MothershipClassSheet, {types: ['class'], makeDefault: true});
+  foundry.documents.collections.Items.registerSheet("moshru", MothershipSkillSheet, {types: ['skill'], makeDefault: true});
+  foundry.documents.collections.Items.registerSheet("moshru", MothershipItemSheet, {
     types: [
       "item",
       "weapon",
@@ -200,7 +200,7 @@ Hooks.on("preCreateActor", (document, createData, options, userId) => {
       "prototypeToken.vision": true
     });
 
-    if (game.settings.get("mosh", "useCalm")) {
+    if (game.settings.get("moshru", "useCalm")) {
       document.updateSource({
         "system.other.stress.min": 0,
         "system.other.stress.value": 85,
@@ -240,7 +240,7 @@ async function createMothershipMacro(data, slot) {
   if (!item) return ui.notifications.warn("You can only create macro buttons for owned Items");
 
   // Create the macro command
-  let command = `game.mosh.rollItemMacro("${item.name}");`;
+  let command = `game.moshru.rollItemMacro("${item.name}");`;
 console.log(command);
   let macro = game.macros.find(m => (m.name === item.name) && (m.command === command));
   if (!macro) {
@@ -250,7 +250,7 @@ console.log(command);
       img: item.img,
       command: command,
       flags: {
-        "mosh.itemMacro": true
+        "moshru.itemMacro": true
       }
     });
   }
@@ -268,11 +268,11 @@ function rollItemMacro(itemName) {
   let item;
   let itemId;
   //determine who to run the macro for
-  if (game.settings.get('mosh','macroTarget') === 'character') {
+  if (game.settings.get('moshru','macroTarget') === 'character') {
     //is there a selected character? warn if no
     if (!game.user.character) {
       //warn player
-      game.mosh.noCharSelected();
+      game.moshru.noCharSelected();
     } else {
       //run the function for the player's 'Selected Character'
         //get item id
@@ -290,11 +290,11 @@ function rollItemMacro(itemName) {
           return game.user.character.rollCheck(null, null, null, item.name, item.system.bonus, null);
         }
     }
-  } else if (game.settings.get('mosh','macroTarget') === 'token') {
+  } else if (game.settings.get('moshru','macroTarget') === 'token') {
     //is there a selected character? warn if no
     if (!canvas.tokens.controlled.length) {
       //warn player
-      game.mosh.noCharSelected();
+      game.moshru.noCharSelected();
     } else {
       //run the function for all selected tokens
       canvas.tokens.controlled.forEach(function(token){
@@ -350,20 +350,20 @@ function rollStatMacro() {
 //find and tell the actor to run the tableRoll function
 async function initRollTable(tableId,rollString,aimFor,zeroBased,checkCrit,rollAgainst,comparison) {
   //determine who to run the macro for
-  if (game.settings.get('mosh','macroTarget') === 'character') {
+  if (game.settings.get('moshru','macroTarget') === 'character') {
     //is there a selected character? warn if no
     if (!game.user.character) {
       //warn player
-      game.mosh.noCharSelected();
+      game.moshru.noCharSelected();
     } else {
       //run the function for the player's 'Selected Character'
       game.user.character.rollTable(tableId,rollString,aimFor,zeroBased,checkCrit,rollAgainst,comparison);
     }
-  } else if (game.settings.get('mosh','macroTarget') === 'token') {
+  } else if (game.settings.get('moshru','macroTarget') === 'token') {
     //is there a selected character? warn if no
     if (!canvas.tokens.controlled.length) {
       //warn player
-      game.mosh.noCharSelected();
+      game.moshru.noCharSelected();
     } else {
       //run the function for all selected tokens
       canvas.tokens.controlled.forEach(function(token){
@@ -378,20 +378,20 @@ async function initRollTable(tableId,rollString,aimFor,zeroBased,checkCrit,rollA
 //find and tell the actor to run the rollCheck function
 async function initRollCheck(rollString,aimFor,attribute,skill,skillValue,weapon) {
   //determine who to run the macro for
-  if (game.settings.get('mosh','macroTarget') === 'character') {
+  if (game.settings.get('moshru','macroTarget') === 'character') {
     //is there a selected character? warn if no
     if (!game.user.character) {
       //warn player
-      game.mosh.noCharSelected();
+      game.moshru.noCharSelected();
     } else {
       //run the function for the player's 'Selected Character'
       game.user.character.rollCheck(rollString,aimFor,attribute,skill,skillValue,weapon);
     }
-  } else if (game.settings.get('mosh','macroTarget') === 'token') {
+  } else if (game.settings.get('moshru','macroTarget') === 'token') {
     //is there a selected character? warn if no
     if (!canvas.tokens.controlled.length) {
       //warn player
-      game.mosh.noCharSelected();
+      game.moshru.noCharSelected();
     } else {
       //run the function for all selected tokens
       canvas.tokens.controlled.forEach(function(token){
@@ -406,20 +406,20 @@ async function initRollCheck(rollString,aimFor,attribute,skill,skillValue,weapon
 //find and tell the actor to run the modifyActor function
 async function initModifyActor(fieldAddress,modValue,modRollString,outputChatMsg) {
   //determine who to run the macro for
-  if (game.settings.get('mosh','macroTarget') === 'character') {
+  if (game.settings.get('moshru','macroTarget') === 'character') {
     //is there a selected character? warn if no
     if (!game.user.character) {
       //warn player
-      game.mosh.noCharSelected();
+      game.moshru.noCharSelected();
     } else {
       //run the function for the player's 'Selected Character'
       game.user.character.modifyActor(fieldAddress,modValue,modRollString,outputChatMsg);
     }
-  } else if (game.settings.get('mosh','macroTarget') === 'token') {
+  } else if (game.settings.get('moshru','macroTarget') === 'token') {
     //is there a selected character? warn if no
     if (!canvas.tokens.controlled.length) {
       //warn player
-      game.mosh.noCharSelected();
+      game.moshru.noCharSelected();
     } else {
       //run the function for all selected tokens
       canvas.tokens.controlled.forEach(function(token){
@@ -434,20 +434,20 @@ async function initModifyActor(fieldAddress,modValue,modRollString,outputChatMsg
 //tell the actor to run the function
 async function initModifyItem(itemId,addAmount) {
   //determine who to run the macro for
-  if (game.settings.get('mosh','macroTarget') === 'character') {
+  if (game.settings.get('moshru','macroTarget') === 'character') {
     //is there a selected character? warn if no
     if (!game.user.character) {
       //warn player
-      game.mosh.noCharSelected();
+      game.moshru.noCharSelected();
     } else {
       //run the function for the player's 'Selected Character'
       game.user.character.modifyItem(itemId,addAmount);
     }
-  } else if (game.settings.get('mosh','macroTarget') === 'token') {
+  } else if (game.settings.get('moshru','macroTarget') === 'token') {
     //is there a selected character? warn if no
     if (!canvas.tokens.controlled.length) {
       //warn player
-      game.mosh.noCharSelected();
+      game.moshru.noCharSelected();
     } else {
       //run the function for all selected tokens
       canvas.tokens.controlled.forEach(function(token){
@@ -466,9 +466,9 @@ async function noCharSelected() {
     //init vars
     let errorMessage = ``;
     //create error text based on current settings
-    if (game.settings.get('mosh','macroTarget') === 'character') {
+    if (game.settings.get('moshru','macroTarget') === 'character') {
       errorMessage = `<h3>No Character Selected</h3>Macro Target is set to the currently selected character. To select a character, modify your User Configuration in the Players menu located in the lower-left of the interface.<br><br>If you prefer Macros to be run on the currently selected token(s) in the scene, you should change your settings accordingly.<br><br>`;
-    } else if (game.settings.get('mosh','macroTarget') === 'token') {
+    } else if (game.settings.get('moshru','macroTarget') === 'token') {
       errorMessage = `<h3>No Character Selected</h3>Macro Target is set to the currently selected token(s) in the scene. To select token(s), click or draw a box around token(s) in the current scene.<br><br>If you prefer Macros to be run on the currently selected character for your user, you should change your settings accordingly.<br><br>`;
     }
     //create final dialog data
@@ -499,9 +499,9 @@ async function noShipSelected() {
     //init vars
     let errorMessage = ``;
     //create error text based on current settings
-    if (game.settings.get('mosh','macroTarget') === 'character') {
+    if (game.settings.get('moshru','macroTarget') === 'character') {
       errorMessage = `<h3>No Ship Selected</h3>Macro Target is set to the currently selected character. To select a ship, modify your User Configuration in the Players menu located in the lower-left of the interface.<br><br>If you prefer Macros to be run on the currently selected token(s) in the scene, you should change your settings accordingly.<br><br>`;
-    } else if (game.settings.get('mosh','macroTarget') === 'token') {
+    } else if (game.settings.get('moshru','macroTarget') === 'token') {
       errorMessage = `<h3>No Ship Selected</h3>Macro Target is set to the currently selected token(s) in the scene. To select token(s), click or draw a box around token(s) in the current scene.<br><br>If you prefer Macros to be run on the currently selected character for your user, you should change your settings accordingly.<br><br>`;
     }
     //create final dialog data

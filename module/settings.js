@@ -2,7 +2,7 @@ import { rolltableConfig } from "./windows/settings-rolltables.js";
 
 export const registerSettings = function () {
   
-  game.settings.register('mosh', 'firstEdition', {
+  game.settings.register('moshru', 'firstEdition', {
     name: "1e Rules",
     hint: "Use the 1st edition rules and character sheet.",
     default: true,
@@ -18,7 +18,7 @@ export const registerSettings = function () {
       let maxStart = null;
       let maxEnd = null;
       //only make changes if calm is false
-      if (game.settings.get('mosh','useCalm') === false) {
+      if (game.settings.get('moshru','useCalm') === false) {
         //if setting is now true
         if (value) {
           //loop through all actors and update their maximum stress
@@ -85,7 +85,7 @@ export const registerSettings = function () {
     }
   });
 
-  game.settings.register('mosh', 'macroTarget', {
+  game.settings.register('moshru', 'macroTarget', {
     name: "Macro Target",
     hint: "Who should be the target for macros?",
     default: "character",
@@ -102,7 +102,7 @@ export const registerSettings = function () {
     }
   });
 
-  game.settings.register('mosh', 'critDamage', {
+  game.settings.register('moshru', 'critDamage', {
     name: "Critical Hit Damage",
     hint: "What should the damage be on a critical hit?",
     default: "advantage",
@@ -123,7 +123,7 @@ export const registerSettings = function () {
     }
   });
 
-  game.settings.register('mosh', 'damageDiceTheme', {
+  game.settings.register('moshru', 'damageDiceTheme', {
     name: "Damage Dice Theme",
     hint: "If DiceSoNice is installed, what theme should be applied to damage dice?",
     default: "damage",
@@ -136,7 +136,7 @@ export const registerSettings = function () {
     }
   });
 
-  game.settings.register('mosh', 'panicDieTheme', {
+  game.settings.register('moshru', 'panicDieTheme', {
     name: "Panic Die Theme",
     hint: "If DiceSoNice is installed, what theme should be applied to the panic die?",
     default: "panic",
@@ -149,7 +149,7 @@ export const registerSettings = function () {
     }
   });
 
-  game.settings.register('mosh', 'hideWeight', {
+  game.settings.register('moshru', 'hideWeight', {
     name: "Hide 0e Weight",
     hint: "Hide the 0e weight mechanic in the items list for players and ships?",
     default: true,
@@ -162,7 +162,7 @@ export const registerSettings = function () {
     }
   });
   
-  game.settings.register('mosh', 'useCalm', {
+  game.settings.register('moshru', 'useCalm', {
     name: "Use Calm?",
     hint: "Uses the traaa.sh Calm system instead of Stress.",
     default: false,
@@ -259,7 +259,7 @@ export const registerSettings = function () {
                 minEnd = Math.round((85-actor.system.other.stress.max)/3);
               }
             //set max stress based on current system setting
-            if (game.settings.get('mosh','firstEdition')) {
+            if (game.settings.get('moshru','firstEdition')) {
               //set max stress to 20
               actor.update({'system.other.stress.max': 20});
               maxEnd = 20;
@@ -288,7 +288,7 @@ export const registerSettings = function () {
     }
   });
 
-  game.settings.register('mosh', 'androidPanic', {
+  game.settings.register('moshru', 'androidPanic', {
     name: "Use Android Panic Tables?",
     hint: "Adds android-specific tables for Panic and Calm checks.",
     default: false,
@@ -301,7 +301,7 @@ export const registerSettings = function () {
     }
   });
 
-  game.settings.register('mosh', 'autoStress', {
+  game.settings.register('moshru', 'autoStress', {
     name: "Auto Stress Gain on Failures?",
     hint: "Automatically handles stress gain on a failed roll.",
     default: true,
@@ -314,7 +314,7 @@ export const registerSettings = function () {
     }
   });
 
-  game.settings.registerMenu('mosh', 'rolltableSelector', {
+  game.settings.registerMenu('moshru', 'rolltableSelector', {
     name: "Rolltable Configuration",
     label: "Choose Tables",
     hint: "Customize which rolltables are used.",
@@ -322,133 +322,133 @@ export const registerSettings = function () {
     type: rolltableConfig
   });
 
-  game.settings.register('mosh', 'table0ePanicStressNormal', {
+  game.settings.register('moshru', 'table0ePanicStressNormal', {
     scope: 'world',
     config: false,
     type: String,
     default: "1vCm4ElRPotQXgNB"
   });
 
-  game.settings.register('mosh', 'table0ePanicStressAndroid', {
+  game.settings.register('moshru', 'table0ePanicStressAndroid', {
     scope: 'world',
     config: false,
     type: String,
     default: "egJ11m2mJM3HBd6d"
   });
 
-  game.settings.register('mosh', 'table0ePanicCalmNormal', {
+  game.settings.register('moshru', 'table0ePanicCalmNormal', {
     scope: 'world',
     config: false,
     type: String,
     default: "kqKpQAXyLTEEyz6Z"
   });
 
-  game.settings.register('mosh', 'table0ePanicCalmAndroid', {
+  game.settings.register('moshru', 'table0ePanicCalmAndroid', {
     scope: 'world',
     config: false,
     type: String,
     default: "VW6HQ29T7zClNIZ6"
   });
 
-  game.settings.register('mosh', 'table1ePanicStressNormal', {
+  game.settings.register('moshru', 'table1ePanicStressNormal', {
     scope: 'world',
     config: false,
     type: String,
     default: "ypcoikqHLhnc9tNs"
   });
 
-  game.settings.register('mosh', 'table1ePanicStressAndroid', {
+  game.settings.register('moshru', 'table1ePanicStressAndroid', {
     scope: 'world',
     config: false,
     type: String,
     default: "aBnY19jlhPXzibCt"
   });
 
-  game.settings.register('mosh', 'table1ePanicCalmNormal', {
+  game.settings.register('moshru', 'table1ePanicCalmNormal', {
     scope: 'world',
     config: false,
     type: String,
     default: "MOYI6Ntj5OVFYk06"
   });
 
-  game.settings.register('mosh', 'table1ePanicCalmAndroid', {
+  game.settings.register('moshru', 'table1ePanicCalmAndroid', {
     scope: 'world',
     config: false,
     type: String,
     default: "GCtYeCCQVQJ5M6SE"
   });
 
-  game.settings.register('mosh', 'table1eWoundBluntForce', {
+  game.settings.register('moshru', 'table1eWoundBluntForce', {
     scope: 'world',
     config: false,
     type: String,
     default: "31YibfjueXuZdNLb"
   });
 
-  game.settings.register('mosh', 'table1eWoundBleeding', {
+  game.settings.register('moshru', 'table1eWoundBleeding', {
     scope: 'world',
     config: false,
     type: String,
     default: "ata3fRz3uoPfNCLh"
   });
 
-  game.settings.register('mosh', 'table1eWoundGunshot', {
+  game.settings.register('moshru', 'table1eWoundGunshot', {
     scope: 'world',
     config: false,
     type: String,
     default: "XjDU2xFOWEasaZK0"
   });
 
-  game.settings.register('mosh', 'table1eWoundFireExplosives', {
+  game.settings.register('moshru', 'table1eWoundFireExplosives', {
     scope: 'world',
     config: false,
     type: String,
     default: "lqiaWwh5cGcJhvnu"
   });
 
-  game.settings.register('mosh', 'table1eWoundGoreMassive', {
+  game.settings.register('moshru', 'table1eWoundGoreMassive', {
     scope: 'world',
     config: false,
     type: String,
     default: "uVfC1CqYdojaJ7yR"
   });
 
-  game.settings.register('mosh', 'table0eDeath', {
+  game.settings.register('moshru', 'table0eDeath', {
     scope: 'world',
     config: false,
     type: String,
     default: "cZOHlhEJcYGZsQBM"
   });
 
-  game.settings.register('mosh', 'table1eDeath', {
+  game.settings.register('moshru', 'table1eDeath', {
     scope: 'world',
     config: false,
     type: String,
     default: "W36WFIpCfMknKgHy"
   });
 
-  game.settings.register('mosh', 'table1eDistressSignal', {
+  game.settings.register('moshru', 'table1eDistressSignal', {
     scope: 'world',
     config: false,
     type: String,
     default: "UxAjAqUTjYTcCbS8"
   });
 
-  game.settings.register('mosh', 'table1eMegadamageEffects', {
+  game.settings.register('moshru', 'table1eMegadamageEffects', {
     scope: 'world',
     config: false,
     type: String,
     default: "AqGWwoWXzijFs427"
   });
 
-  game.settings.register('mosh', 'table1eMaintenance', {
+  game.settings.register('moshru', 'table1eMaintenance', {
     scope: 'world',
     config: false,
     type: String,
     default: "kqz8GsFVPfjvqO0N"
   });
 
-  game.settings.register('mosh', 'table1eBankruptcy', {
+  game.settings.register('moshru', 'table1eBankruptcy', {
     scope: 'world',
     config: false,
     type: String,
