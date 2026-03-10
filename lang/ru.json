@@ -256,140 +256,140 @@
       },
       "strength": {
         "check": {
-          "android": "You gain some confidence in your skills. (Уверенность в эффективности навыков повышена)",
-          "human": "You gain some confidence in your skills. (Вы обретаете уверенность в своих навыках)"
+          "android": "Уровень силы оценивается, как приемлемый для задачи.",
+          "human": "Ты веришь, что у тебя хватит сил."
         },
         "increase": {
-          "android": "Data recovered. Central partition data restored. (Данные восстановлены. Центральный раздел исправен)",
-          "human": "You start to feel like yourself again. (Вы снова начинаете чувствовать себя собой)"
+          "android": "Корпус и сервоприводы укреплены.",
+          "human": "К тебе возвращаются силы."
         },
         "increaseHeader": {
-          "android": "Strength Enhanced (Сила усилена)",
-          "human": "Strength Gained (Сила повышена)"
+          "android": "Увеличен уровень силы",
+          "human": "Увеличен уровень силы"
         },
         "increaseImg": {
           "android": "systems/moshru/images/icons/ui/attributes/strength.png",
           "human": "systems/moshru/images/icons/ui/attributes/strength.png"
         },
         "hitCeiling": {
-          "android": "You are now at maximum strength. (Сила на пределе возможностей)",
-          "human": "You are now at maximum strength. (Ваша сила на максимуме)"
+          "android": "Достигнут предел мощности сервоприводов.",
+          "human": "Ты на максимуме своей физической силы."
         },
         "pastCeiling": {
-          "android": "You are already at maximum strength. (Предел силы достигнут)",
-          "human": "You are already at maximum strength. (Сила уже на максимуме)"
+          "android": "Уже достигнут предел мощности сервоприводов.",
+          "human": "Ты уже на максимуме своей физической силы."
         },
         "decrease": {
-          "android": "Central partition damage detected. Unrecoverable sectors found. (Поврежден центральный раздел. Обнаружены нечитаемые сектора)",
-          "human": "You feel a part of yourself drift away. (Вы чувствуете, как часть вас ускользает)"
+          "android": "Снижена мощность сервоприводов.",
+          "human": "Ты чувствуешь, как твои мышцы дрожат и ноют от боли."
         },
         "decreaseHeader": {
-          "android": "Strength Impaired (Сила снижена)",
-          "human": "Strength Lost (Сила потеряна)"
+          "android": "Снижен уровень силы",
+          "human": "Снижен уровень силы"
         },
         "decreaseImg": {
           "android": "systems/moshru/images/icons/ui/attributes/strength.png",
           "human": "systems/moshru/images/icons/ui/attributes/strength.png"
         },
         "hitFloor": {
-          "android": "You have no strength left. (Запас силы исчерпан)",
-          "human": "You have no strength left. (У вас совсем не осталось сил)"
+          "android": "Мощность сервоприводов на критическом минимуме.",
+          "human": "У тебя не осталось сил."
         },
         "pastFloor": {
-          "android": "Your strength cannot get any lower. (Минимальный порог силы)",
-          "human": "Your strength cannot get any lower. (Ваша сила не может быть ниже)"
+          "android": "Мощность систем не может снизиться ещё сильнее.",
+          "human": "Ты не сможешь стать ещё более слабым."
         }
       },
       "speed": {
         "check": {
-          "android": "You gain some confidence in your skills. (Оптимизация скорости завершена)",
-          "human": "You gain some confidence in your skills. (Вы обретаете уверенность в своей скорости)"
+          "android": "Уровень скорости оценивается, как приемлемый для задачи.",
+          "human": "Ты думаешь, что ты достаточно быстр."
         },
         "increase": {
-          "android": "Data recovered. Central partition data restored. (Скоростные протоколы восстановлены)",
-          "human": "You start to feel like yourself again. (Вы снова чувствуете легкость в движениях)"
+          "android": "Скорость работы сервоприводов увеличена.",
+          "human": "Ты чувствуешь, что стал быстрее."
         },
         "increaseHeader": {
-          "android": "Speed Enhanced (Скорость повышена)",
-          "human": "Speed Gained (Скорость увеличена)"
+          "android": "Увеличен уровень скорости",
+          "human": "Увеличен уровень скорости"
         },
         "increaseImg": {
           "android": "systems/moshru/images/icons/ui/attributes/speed.png",
           "human": "systems/moshru/images/icons/ui/attributes/speed.png"
         },
         "hitCeiling": {
-          "android": "You are now at maximum speed. (Максимальное быстродействие)",
-          "human": "You are now at maximum speed. (Ваша скорость на максимуме)"
+          "android": "Достигнут предел скорости сервоприводов.",
+          "human": "Ты чувствуешь необычайную лёгкость, ты быстр, как никогда."
         },
         "pastCeiling": {
-          "android": "You are already at maximum speed. (Скорость уже на пределе)",
-          "human": "You are already at maximum speed. (Скорость уже на максимуме)"
+          "android": "Уже достигнут предел скорости сервоприводов.",
+          "human": "Ты уже быстр настолько, насколько это возможно."
         },
         "decrease": {
-          "android": "Central partition damage detected. Unrecoverable sectors found. (Задержка отклика моторики)",
-          "human": "You feel a part of yourself drift away. (Вы чувствуете, как замедляетесь)"
+          "android": "Снижена скорость сервоприводов.",
+          "human": "Мышцы дубеют, ты становишься менее ловким."
         },
         "decreaseHeader": {
-          "android": "Speed Impaired (Скорость снижена)",
-          "human": "Speed Lost (Скорость потеряна)"
+          "android": "Снижен уровень скорости",
+          "human": "Снижен уровень скорости"
         },
         "decreaseImg": {
           "android": "systems/moshru/images/icons/ui/attributes/speed.png",
           "human": "systems/moshru/images/icons/ui/attributes/speed.png"
         },
         "hitFloor": {
-          "android": "You feel completely lethargic. (Системы замедлены до минимума)",
-          "human": "You feel completely lethargic. (Вы чувствуете полную вялость)"
+          "android": "Скорость работы сервоприводов на критическом минимуме.",
+          "human": "Ты еле шевелишься."
         },
         "pastFloor": {
-          "android": "Your speed cannot get any lower. (Скорость не может быть ниже)",
-          "human": "Your speed cannot get any lower. (Ваша скорость не может быть ниже)"
+          "android": "Скорость работы систем не может снизиться ещё сильнее.",
+          "human": "Ты не сможешь стать ещё медленнее."
         }
       },
       "intellect": {
         "check": {
-          "android": "You gain some confidence in your skills. (Вычислительная мощность подтверждена)",
-          "human": "You gain some confidence in your skills. (Вы обретаете уверенность в своих знаниях)"
+          "android": "Вычислительная мощность оценивается, как приемлемая для данной задачи.",
+          "human": "Ты уверен, что справишься с этой задачей."
         },
         "increase": {
-          "android": "Data recovered. Central partition data restored. (Логические блоки восстановлены)",
-          "human": "You start to feel like yourself again. (Мысли снова становятся ясными)"
+          "android": "Работа процессоров оптимизирована. Вычислительная мощность возросла.",
+          "human": "Сознание очищается, разум становится острее."
         },
         "increaseHeader": {
-          "android": "Intellect Enhanced (Интеллект усилен)",
-          "human": "Intellect Gained (Интеллект повышен)"
+          "android": "Увеличен уровень интеллекта",
+          "human": "Увеличен уровень интеллекта"
         },
         "increaseImg": {
           "android": "systems/moshru/images/icons/ui/attributes/intellect.png",
           "human": "systems/moshru/images/icons/ui/attributes/intellect.png"
         },
         "hitCeiling": {
-          "android": "You are now at maximum intellect. (Пиковая производительность процессора)",
-          "human": "You are now at maximum intellect. (Ваш интеллект на максимуме)"
+          "android": "Достигнут предел вычислительной мощности.",
+          "human": "Ты достиг максимума своих умственных возможностей."
         },
         "pastCeiling": {
-          "android": "You are already at maximum intellect. (Интеллект уже на максимуме)",
-          "human": "You are already at maximum intellect. (Интеллект уже на максимуме)"
+          "android": "Уже достигнут предел вычислительной мощности.",
+          "human": "Ты уже достиг максимума своих умственных возможностей."
         },
         "decrease": {
-          "android": "Central partition damage detected. Unrecoverable sectors found. (Повреждение когнитивных модулей)",
-          "human": "You feel a part of yourself drift away. (Ваши мысли путаются)"
+          "android": "Повреждение процессоров. Снижение вычислительной мощности.",
+          "human": "Сознание путается, мысли начинают ускользать."
         },
         "decreaseHeader": {
-          "android": "Intellect Impaired (Интеллект снижен)",
-          "human": "Intellect Lost (Интеллект потерян)"
+          "android": "Снижен уровень интеллекта",
+          "human": "Снижен уровень интеллекта"
         },
         "decreaseImg": {
           "android": "systems/moshru/images/icons/ui/attributes/intellect.png",
           "human": "systems/moshru/images/icons/ui/attributes/intellect.png"
         },
         "hitFloor": {
-          "android": "You feel utterly confused. (Критическая ошибка логики)",
-          "human": "You feel utterly confused. (Вы в полном замешательстве)"
+          "android": "Вычислительная мощность на минимуме.",
+          "human": "Ты в полном замешательстве."
         },
         "pastFloor": {
-          "android": "Your intellect cannot get any lower. (Интеллект на минимуме)",
-          "human": "Your intellect cannot get any lower. (Ваш интеллект не может быть ниже)"
+          "android": "Вычислительная мощность уже на минимуме.",
+          "human": "Твой мозг не может работать еще хуже."
         }
       },
       "combat": {
