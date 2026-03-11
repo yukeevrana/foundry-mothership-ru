@@ -1,1 +1,0 @@
-game.moshru.initModifyActor('system.hits.value',-1,null,true);

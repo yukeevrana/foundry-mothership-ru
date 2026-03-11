@@ -1,1 +1,0 @@
-game.moshru.initRollCheck('1d100 [+]','low','body',null,null,null);

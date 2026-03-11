@@ -1,1 +1,0 @@
-game.moshru.initRollTable(`panicCheck`,`[+]`,null,false,false,null,null);

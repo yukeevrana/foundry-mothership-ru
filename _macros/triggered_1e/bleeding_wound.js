@@ -1,1 +1,0 @@
-game.moshru.initRollTable(game.settings.get('moshru','table1eWoundBleeding'),`1d10`,`low`,true,false,null,null);

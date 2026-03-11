@@ -1,1 +1,0 @@
-game.moshru.initModifyItem('PiMuPeHR5EobSPBP',1);

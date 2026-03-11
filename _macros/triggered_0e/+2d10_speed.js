@@ -1,1 +1,0 @@
-game.moshru.initModifyActor('system.stats.speed.value',null,'2d10',true);
